@@ -1,19 +1,25 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
 
-#main-container > div > div {
-    color: white;
+:root {
+    --color-text-primary: white;
 }
 
-.jumbotron {
+#main-container > div > div {
+    color: var(--color-text-primary);
+}
+
+#main-container {
     background: url("https://express-images.franklymedia.com/6616/sites/157/2020/11/09142131/Queen-Adam-Lambert-Live-around-the-world.png") no-repeat;
     background-size: cover;
     width: 100%;
+    height: 30vh;
     margin-left: auto;
+    color: var(--color-text-primary);
 }
 
 #playlist-container {
-    width: 60%;
-    height: 60vh;
+    width: 100%;
+    height: 70vh;
     background: linear-gradient(0deg, rgba(19,18,19,1) 0%, rgba(80,81,81,1) 80%, rgba(80,81,81,1) 100%);
 }
 
@@ -35,14 +41,13 @@
 }
 
 #follow {
-    color: white;
+    color: var(--color-text-primary);
     padding: 5px 15px;
     border-radius: 15%;
-
 }
 
 #dots {
-    color: white;
+    color: var(--color-text-primary);
     margin-left: 10px;
 
 }
@@ -53,12 +58,17 @@
 
 h2 {
     font-size: 20px;
-    color: white;
+    color: var(--color-text-primary);
 }
 
 .list-group-item {
     background: linear-gradient(0deg, rgba(19,18,19,1) 0%, rgba(80,81,81,1) 80%, rgba(80,81,81,1) 100%);
-    color: white;
+    color: var(--color-text-primary);
     border: transparent;
     cursor: pointer;
+}
+
+#see-more {
+    color: var(--color-text-primary);
+    list-style-type: none;
 }
