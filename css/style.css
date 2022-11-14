@@ -16,3 +16,49 @@
     height: 60vh;
     background: linear-gradient(0deg, rgba(19,18,19,1) 0%, rgba(80,81,81,1) 80%, rgba(80,81,81,1) 100%);
 }
+
+#verified-btn {
+    background-position: center center;
+    width: 32px;
+    height: 32px;
+    font-size: 24px;
+    text-align: center;
+    margin-block: auto;
+    margin: 0;
+    color: blue;
+}
+
+#pause-button {
+    background: radial-gradient(circle 26px, white, rgba(80,81,81,1));
+    font-size: 48px;
+    color: #1db954;
+}
+
+#follow {
+    color: white;
+    padding: 5px 15px;
+    border-radius: 15%;
+
+}
+
+#dots {
+    color: white;
+    margin-left: 10px;
+
+}
+
+#pause-button, #follow, #dots {
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 20px;
+    color: white;
+}
+
+.list-group-item {
+    background: linear-gradient(0deg, rgba(19,18,19,1) 0%, rgba(80,81,81,1) 80%, rgba(80,81,81,1) 100%);
+    color: white;
+    border: transparent;
+    cursor: pointer;
+}
