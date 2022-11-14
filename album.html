@@ -21,14 +21,183 @@
     <div class="container-fluid">
       <div class="row">
         <!-- NAVBAR -->
-        <nav class="nav navbar-nav flex-column bg-dark col-2">
-          <a class="nav-link active" href="#">Home</a>
-          <a class="nav-link" href="#">Search</a>
-          <a class="nav-link" href="#">Your Library</a>
-          <a class="nav-link">Create Playlist</a>
-          <a class="nav-link">Liked Songs</a>
-          <br class="" />
-        </nav>
+        <div id="first" class="col-2">
+          <ul id="nav-1" class="nav flex-column">
+            <li class="nav-item">
+              <hr />
+              <a class="nav-linke" href="#">
+                <img
+                  id="logo"
+                  src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_White.png"
+                  alt="Logo"
+              /></a>
+              <hr />
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-house-door"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"
+                    /></svg></span
+                ><span>Home</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-search"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                    /></svg></span
+                ><span>Search</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-bookmarks"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5V4zm2-1a1 1 0 0 0-1 1v10.566l3.723-2.482a.5.5 0 0 1 .554 0L11 14.566V4a1 1 0 0 0-1-1H4z"
+                    />
+                    <path
+                      d="M4.268 1H12a1 1 0 0 1 1 1v11.768l.223.148A.5.5 0 0 0 14 13.5V2a2 2 0 0 0-2-2H6a2 2 0 0 0-1.732 1z"
+                    /></svg></span
+                ><span>Your Library</span></a
+              >
+            </li>
+          </ul>
+          <hr />
+          <ul id="nav-2" class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-plus-square"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"
+                    />
+                    <path
+                      d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+                    /></svg></span
+                ><span>Create Playlist</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                    /></svg></span
+                ><span> </span> <span>Liked Songs</span></a
+              >
+            </li>
+          </ul>
+          <hr style="border: solid 1px grey" />
+          <ul id="nav-3" class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Funky Heavy Bluesy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Your Top Songs 2020</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">In Love With You - Erykah B...</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">This is Rod Stewart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">FRANCHISE ft.Young Thug...</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Your Top Songs 2019</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Palleggio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">This is Joe Bonamassa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Jun19</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Jack 30th Party 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Jack 30th Party</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">This is Opeth</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Metal Ballads</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">New Playlist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Your Top Songs 2018</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Jazz Classics Blue Note Editi...</a>
+            </li>
+          </ul>
+          <ul id="nav-4" class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-arrow-down-circle"
+                    viewBox="0 0 16 16"
+                  ></svg>
+                </span>
+                <span>Install App</span></a
+              >
+            </li>
+          </ul>
+        </div>
         <!-- Content -->
         <div class="contentDiv col-10">
           <div class="row arrows justify-content-between">

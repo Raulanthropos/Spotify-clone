@@ -15,6 +15,40 @@
   background-color: rgba(0, 0, 0, 0.38);
 }
 
+/* Navbar */
+
+#first {
+  background-color: black;
+  padding-left: 3rem;
+}
+#logo {
+  width: 10rem;
+}
+#nav-1 .nav-link,
+#nav-2 .nav-link,
+#nav-4 .nav-link {
+  color: white;
+}
+#nav-3 .nav-link {
+  color: grey;
+}
+#nav-3 .nav-link:hover {
+  color: white;
+  background-color: grey;
+}
+#nav-1 .nav-link:hover,
+#nav-2 .nav-link:hover {
+  background-color: grey;
+  color: white;
+}
+
+#nav-3 {
+  overflow: hidden;
+  overflow-y: scroll;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 /* 1st Row (Arrows) */
 
 .leftArrow {
@@ -134,7 +168,7 @@
 /* Music Player Bottom */
 
 .musicPlayer {
-  min-height: 100px;
+  min-height: 101px;
   flex-grow: 0;
   width: auto;
   background-color: rgb(30, 30, 30);
@@ -142,8 +176,8 @@
 }
 
 .playerSongImageDiv {
-  min-width: 70px;
-  max-height: 70px;
+  min-width: 71px;
+  max-height: 71px;
   aspect-ratio: 1/1;
   overflow: hidden;
 }
