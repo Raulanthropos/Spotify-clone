@@ -1,1 +1,160 @@
+body {
+  font-size: x-large;
+}
+#first {
+  background-color: black;
+  padding-left: 3rem;
+}
+#logo {
+  width: 10rem;
+}
+#nav-1 .nav-link,
+#nav-2 .nav-link,
+#nav-4 .nav-link {
+  color: white;
+}
+#nav-3 .nav-link {
+  color: grey;
+}
+#nav-3 .nav-link:hover {
+  color: white;
+  background-color: grey;
+}
+#nav-1 .nav-link:hover,
+#nav-2 .nav-link:hover {
+  background-color: grey;
+  color: white;
+}
 
+#nav-3 {
+  overflow: hidden;
+  overflow-y: scroll;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.prev-next-buttons {
+  cursor: not-allowed;
+}
+.prev-next-buttons button {
+  border-radius: 100%;
+  width: 4rem;
+  height: 4rem;
+  border: 0;
+  margin-right: 0.2rem;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+.col-10 {
+  background-image: linear-gradient(
+    to top,
+    #121212,
+    #121212,
+    #121212,
+    #121212,
+    #121212,
+    #161419,
+    #1a151e,
+    #201522,
+    #311327,
+    #430d24,
+    #53051b,
+    #5e0506
+  );
+  color: white;
+}
+#podcast-hook {
+  color: grey;
+  margin-left: 1rem;
+}
+.musicPlayer {
+  min-height: 101px;
+  flex-grow: 0;
+  width: auto;
+  background-color: rgb(30, 30, 30);
+  color: white;
+}
+
+.playerSongImageDiv {
+  min-width: 71px;
+  max-height: 71px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+.playerSongImage {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.playerSongTitle {
+  font-size: 0.9vh;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.playerSongArtist {
+  font-size: 0.8vh;
+}
+
+.iconsDivPlayer {
+  font-size: 1vh;
+}
+
+.iconPlay {
+  height: 2vh;
+  aspect-ratio: 1/1;
+  background-color: white;
+  color: black;
+  font-size: 1.2vh;
+}
+.accountInfo {
+  width: 10vw;
+  background-color: black;
+}
+
+.profilePhotoDiv {
+  width: 3.5rem;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+.profileImg,
+.artistImg {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profileName {
+  font-size: 1rem;
+  font-weight: bolder;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.profileArrowDown {
+  font-size: 1rem;
+}
+.background-card {
+  background-color: rgba(128, 128, 128, 0.301);
+  border-radius: 5px;
+}
+.background-card img {
+  width: 80px;
+}
+.everycard {
+  height: 80px;
+  width: 300px;
+}
+.card-title {
+  font-weight: 600;
+}
+.gridofcards {
+  display: flex;
+}
+#darker {
+  background-color: rgba(48, 48, 48, 0.301);
+}

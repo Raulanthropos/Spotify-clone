@@ -12,134 +12,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <style>
-      body {
-        font-size: x-large;
-      }
-      #first {
-        background-color: black;
-        padding-left:  3rem;
-      }
-      #logo {
-        width: 10rem;
-      }
-      #nav-1 .nav-link, #nav-2 .nav-link, #nav-4 .nav-link {
-        color: white;
-      }
-      #nav-3 .nav-link  {
-        color: grey;
-      }
-      #nav-3 .nav-link:hover {
-        color:white;
-        background-color: grey;
-      }
-      #nav-1 .nav-link:hover, #nav-2 .nav-link:hover  {
-        background-color: grey;
-        color: white;
-      }
-      
-      #nav-3 {
-        overflow: hidden;
-        overflow-y:scroll;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-
-      }
-      .prev-next-buttons {
-        cursor: not-allowed;
-      }
-      .prev-next-buttons button {
-        border-radius: 100%;
-        width: 4rem;
-        height: 4rem;
-        border:0;
-        margin-right: 0.2rem;
-        margin-left: 1.5rem;
-        margin-top: 1rem;
-
-      }
-      .col-10 {
-        background-image: linear-gradient(0deg, rgb(26, 26, 26) 75%, rgb(103, 5, 5) 100%);
-        color: white;
-      }
-      #podcast-hook {
-        color: grey;
-        margin-left: 1rem;
-      }
-      .musicPlayer {
-  min-height: 101px;
-  flex-grow: 0;
-  width: auto;
-  background-color: rgb(30, 30, 30);
-  color: white;
-}
-
-.playerSongImageDiv {
-  min-width: 71px;
-  max-height: 71px;
-  aspect-ratio: 1/1;
-  overflow: hidden;
-}
-.playerSongImage {
-  width: auto;
-  height: 100%;
-  object-fit: cover;
-}
-
-.playerSongTitle {
-  font-size: 0.9vh;
-  font-weight: bold;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.playerSongArtist {
-  font-size: 0.8vh;
-}
-
-.iconsDivPlayer {
-  font-size: 1vh;
-}
-
-.iconPlay {
-  height: 2vh;
-  aspect-ratio: 1/1;
-  background-color: white;
-  color: black;
-  font-size: 1.2vh;
-}
-.accountInfo {
-  width: 10vw;
-  background-color: black;
-}
-
-.profilePhotoDiv {
-  width: 2vw;
-  aspect-ratio: 1/1;
-  overflow: hidden;
-}
-
-.profileImg,
-.artistImg {
-  width: auto;
-  height: 100%;
-  object-fit: cover;
-}
-
-.profileName {
-  font-size: 0.8vh;
-  font-weight: bolder;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.profileArrowDown {
-  font-size: 0.8vh;
-}
-
-    </style>
+    <link rel="stylesheet" href="welcome.css"/>
+    
   </head>
   <body>
     <div class="container-fluid">
@@ -334,262 +208,427 @@
               </div>
             </div>
           <!--Horizontal Cards-->
-          <h1 class="mt-5 ml-2 mb-3">Good morning</h1>
-          <div class="container-fluid d-flex">
-          <div class="row d-flex">
-            <div class="col-2"><div class="card mb-2" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="..." alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-              </div>
-            </div></div>
-            <div class="col-2"><div class="card mb-3" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="..." alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-              </div>
-            </div></div>
-            <div class="col-2"><div class="card mb-3" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="..." alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-              </div>
-            </div></div>
-            <div class="col-2"><div class="card mb-3" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="..." alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-              </div>
-            </div></div>
-            <div class="col-2"><div class="card mb-3" style="max-width: 540px;">
-              <div class="row no-gutters">
-                <div class="col-md-4">
-                  <img src="..." alt="...">
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
-                </div>
-              </div>
-            </div></div>
-            </div>
-          </div>
-            <div class="container-fluid d-flex">
-            <div class="row">
-              <div class="col-2"><div class="card mb-3" style="max-width: 540px;">
+          
+          <h1 class="mt-5 ml-2 mb-5">Good morning</h1>
+          <div class="gridofcards d-flex justify-content-between">
+            <div class="everycard">
+              <div class="background-card mb-3" style="max-width: 540px">
                 <div class="row no-gutters">
                   <div class="col-md-4">
-                    <img src="" alt="...">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/3/3e/ACDC_Back_in_Black_cover.svg"
+                      alt="..."
+                    />
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      <h5 class="card-title">AC/DC Playlist</h5>
                     </div>
                   </div>
                 </div>
-              </div></div>
-              <div class="col-2"><div class="card mb-3" style="max-width: 540px;">
+              </div>
+            </div>
+            <div class="everycard">
+              <div class="background-card mb-3" style="max-width: 540px">
                 <div class="row no-gutters">
                   <div class="col-md-4">
-                    <img src="..." alt="...">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/3/3e/ACDC_Back_in_Black_cover.svg"
+                      alt="..."
+                    />
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      <h5 class="card-title">AC/DC Playlist</h5>
                     </div>
                   </div>
                 </div>
-              </div></div>
-              <div class="col-2"><div class="card mb-3" style="max-width: 540px;">
+              </div>
+            </div>
+            <div class="everycard">
+              <div class="background-card mb-3" style="max-width: 540px">
                 <div class="row no-gutters">
                   <div class="col-md-4">
-                    <img src="..." alt="...">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/3/3e/ACDC_Back_in_Black_cover.svg"
+                      alt="..."
+                    />
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      <h5 class="card-title">AC/DC Playlist</h5>
                     </div>
                   </div>
                 </div>
-              </div></div>
-              <div class="col-2"><div class="card mb-3" style="max-width: 540px;">
+              </div>
+            </div>
+            <div class="everycard">
+              <div class="background-card mb-3" style="max-width: 540px">
                 <div class="row no-gutters">
                   <div class="col-md-4">
-                    <img src="..." alt="...">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/3/3e/ACDC_Back_in_Black_cover.svg"
+                      alt="..."
+                    />
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      <h5 class="card-title">AC/DC Playlist</h5>
                     </div>
                   </div>
                 </div>
-              </div></div>
-              <div class="col-2"><div class="card mb-3" style="max-width: 540px;">
+              </div>
+            </div>
+            <div class="everycard">
+              <div class="background-card mb-3" style="max-width: 540px">
                 <div class="row no-gutters">
                   <div class="col-md-4">
-                    <img src="..." alt="...">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/3/3e/ACDC_Back_in_Black_cover.svg"
+                      alt="..."
+                    />
                   </div>
                   <div class="col-md-8">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      <h5 class="card-title">AC/DC Playlist</h5>
                     </div>
                   </div>
                 </div>
-              </div></div>
+              </div>
             </div>
           </div>
-            <div class="row">
-              <div class="col">
-            <h2 class="mt-3 mb-4 ml-3">Recently played</h2>
-          </div>
-          <div class="col"><p class="d-flex justify-content-end mr-4" style="color:grey">SEE ALL</p></div>
-          </div>
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col"><div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <!--Horizontal card p.2-->
+          
+          <div class="gridofcards d-flex justify-content-between mt-5">
+            <div class="everycard">
+              <div class="background-card mb-3" style="max-width: 540px">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/3/3e/ACDC_Back_in_Black_cover.svg"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">AC/DC Playlist</h5>
+                    </div>
+                  </div>
                 </div>
-              </div></div>
-              <div class="col"><div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="everycard">
+              <div class="background-card mb-3" style="max-width: 540px">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/3/3e/ACDC_Back_in_Black_cover.svg"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">AC/DC Playlist</h5>
+                    </div>
+                  </div>
                 </div>
-              </div></div>
-              <div class="col"><div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="everycard">
+              <div class="background-card mb-3" style="max-width: 540px">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/3/3e/ACDC_Back_in_Black_cover.svg"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">AC/DC Playlist</h5>
+                    </div>
+                  </div>
                 </div>
-              </div></div>
-              <div class="col"><div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="everycard">
+              <div class="background-card mb-3" style="max-width: 540px">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/3/3e/ACDC_Back_in_Black_cover.svg"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">AC/DC Playlist</h5>
+                    </div>
+                  </div>
                 </div>
-              </div></div>
-              <div class="col"><div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+            <div class="everycard">
+              <div class="background-card mb-3" style="max-width: 540px">
+                <div class="row no-gutters">
+                  <div class="col-md-4">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/3/3e/ACDC_Back_in_Black_cover.svg"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">AC/DC Playlist</h5>
+                    </div>
+                  </div>
                 </div>
-              </div></div>
-              <div class="col"><div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div></div>
-              <div class="col"><div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div></div>
-              
+              </div>
             </div>
           </div>
-            <div class="row">
-              <div class="col">
-            <h2 class="mt-4  ml-3">Shows to try</h2>
-            <p id="podcast-hook">Podcasts we think you'll get hooked on.</p>
-          </div>
-          <div class="col"><p class="d-flex justify-content-end mr-4" style="color:grey">SEE ALL</p></div>
-          </div>
-          <div class="row">
-            <div class="col"><div class="card" style="width: 18rem;">
-              <img src="" class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <!-- Normal Cards -->
+          <div>
+            <h2 class=" mb-4 mt-5">Recently Played</h2>
+            <div class="gridofcards d-flex justify-content-between">
+              <div class="card" id="darker" style="width: 12rem; height: 16.5rem">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/2/25/YellowcardLightsandSounds.jpg"
+                  class="card-img-top pt-3 pl-3 pr-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Yellowcard Mix</h5>
+                  <p class="card-text text-truncate">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+                    corrupti porro. Fugiat corrupti aut ab adipisci temporibus
+                    molestias deserunt. Tenetur eaque quaerat iste aspernatur quo
+                    harum incidunt inventore at sint!
+                  </p>
+                </div>
               </div>
-            </div></div>
-            <div class="col"><div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="card" id="darker" style="width: 12rem; height: 16.5rem">
+                <img
+                  src="https://storage.googleapis.com/pr-newsroom-wp/1/2021/10/Spotify-DiscoverThis-Final.jpg"
+                  class="card-img-top pt-3 pl-3 pr-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-truncate">Discover Something New</h5>
+                  <p class="card-text text-truncate">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+                    corrupti porro. Fugiat corrupti aut ab adipisci temporibus
+                    molestias deserunt. Tenetur eaque quaerat iste aspernatur quo
+                    harum incidunt inventore at sint!
+                  </p>
+                </div>
               </div>
-            </div></div>
-            <div class="col"><div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="card" id="darker" style="width: 12rem; height: 16.5rem">
+                <img
+                  src="https://www.billboard.com/wp-content/uploads/2022/03/35.-Metallica-%E2%80%98Master-of-Puppets-1986-album-art-billboard-1240.jpg?w=600"
+                  class="card-img-top pt-3 pl-3 pr-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Metallica</h5>
+                  <p class="card-text text-truncate">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+                    corrupti porro. Fugiat corrupti aut ab adipisci temporibus
+                    molestias deserunt. Tenetur eaque quaerat iste aspernatur quo
+                    harum incidunt inventore at sint!
+                  </p>
+                </div>
               </div>
-            </div></div>
-            <div class="col"><div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="card" id="darker" style="width: 12rem; height: 16.5rem">
+                <img
+                  src="https://media.pitchfork.com/photos/5bcdf9b8a8f1ec1406cb9892/1:1/w_600/Queen_Bohemian%20Rhapsody%20OST.jpg"
+                  class="card-img-top pt-3 pl-3 pr-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-truncate">Bohemian Rhapsody</h5>
+                  <p class="card-text text-truncate">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+                    corrupti porro. Fugiat corrupti aut ab adipisci temporibus
+                    molestias deserunt. Tenetur eaque quaerat iste aspernatur quo
+                    harum incidunt inventore at sint!
+                  </p>
+                </div>
               </div>
-            </div></div>
-            <div class="col"><div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="card" id="darker" style="width: 12rem; height: 16.5rem">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/en/2/25/YellowcardLightsandSounds.jpg"
+                  class="card-img-top pt-3 pl-3 pr-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Yellowcard Mix</h5>
+                  <p class="card-text text-truncate">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+                    corrupti porro. Fugiat corrupti aut ab adipisci temporibus
+                    molestias deserunt. Tenetur eaque quaerat iste aspernatur quo
+                    harum incidunt inventore at sint!
+                  </p>
+                </div>
               </div>
-            </div></div>
-            <div class="col"><div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="card" id="darker" style="width: 12rem; height: 16.5rem">
+                <img
+                  src="https://i.scdn.co/image/ab6761610000e5eba00b11c129b27a88fc72f36b"
+                  class="card-img-top pt-3 pl-3 pr-3"
+                  id="rounded"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Eminem</h5>
+                  <p class="card-text text-truncate">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+                    corrupti porro. Fugiat corrupti aut ab adipisci temporibus
+                    molestias deserunt. Tenetur eaque quaerat iste aspernatur quo
+                    harum incidunt inventore at sint!
+                  </p>
+                </div>
               </div>
-            </div></div>
-            <div class="col"><div class="card" style="width: 18rem;">
-              <img src="..." class="card-img-top" alt="...">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="card" id="darker" style="width: 12rem; height: 16.5rem">
+                <img
+                  src="https://i.scdn.co/image/ab67706f0000000387bff188c40608c48b82068f"
+                  class="card-img-top pt-3 pl-3 pr-3"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">This is Drake</h5>
+                  <p class="card-text text-truncate">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+                    corrupti porro. Fugiat corrupti aut ab adipisci temporibus
+                    molestias deserunt. Tenetur eaque quaerat iste aspernatur quo
+                    harum incidunt inventore at sint!
+                  </p>
+                </div>
               </div>
-            </div></div>
             </div>
+          </div>
+          <!--Normal Cards p.2-->
+          <div class="margin-top">
+            <span>
+              <h2 class="mt-5 mb-1 mt-3">Shows to try</h2>
+              <p class="text-muted mb-4">Podcasts we think you'll get hooked on.</p>
+            </span>
+            <div>
+              <div class="gridofcards d-flex justify-content-between">
+                <div class="card" id="darker" style="width: 12rem; height: 16.5rem">
+                  <img
+                    src="https://edit.org/photos/img/blog/lin-podcast-cover-micro-circle-colors.jpg-840.jpg"
+                    class="card-img-top pt-3 pl-3 pr-3"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-truncate">Monday Podcast</h5>
+                    <p class="card-text text-truncate">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Soluta, corrupti porro. Fugiat corrupti aut ab adipisci
+                      temporibus molestias deserunt. Tenetur eaque quaerat iste
+                      aspernatur quo harum incidunt inventore at sint!
+                    </p>
+                  </div>
+                </div>
+                <div class="card" id="darker" style="width: 12rem; height: 16.5rem">
+                  <img
+                    src="https://i.scdn.co/image/ab6765630000ba8af8141e891abf749375772343"
+                    class="card-img-top pt-3 pl-3 pr-3"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-truncate">Life at Spotify</h5>
+                    <p class="card-text text-truncate">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Soluta, corrupti porro. Fugiat corrupti aut ab adipisci
+                      temporibus molestias deserunt. Tenetur eaque quaerat iste
+                      aspernatur quo harum incidunt inventore at sint!
+                    </p>
+                  </div>
+                </div>
+                <div class="card" id="darker" style="width: 12rem; height: 16.5rem">
+                  <img
+                    src="https://pbs.twimg.com/media/EIFEWqVU8AAw07Z.jpg"
+                    class="card-img-top pt-3 pl-3 pr-3"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-truncate">The Opening Act</h5>
+                    <p class="card-text text-truncate">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Soluta, corrupti porro. Fugiat corrupti aut ab adipisci
+                      temporibus molestias deserunt. Tenetur eaque quaerat iste
+                      aspernatur quo harum incidunt inventore at sint!
+                    </p>
+                  </div>
+                </div>
+                <div class="card" id="darker" style="width: 12rem; height: 16.5rem">
+                  <img
+                    src="https://freight.cargo.site/t/original/i/a7e95331ab34c475b9aa4322a2846a59f8976db2f5d25b51cc06f47ff305574e/Podcast_S4_LOUD_3000x3000-copy.jpg"
+                    class="card-img-top pt-3 pl-3 pr-3"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-truncate">
+                      The History Of Reggaeton
+                    </h5>
+                    <p class="card-text text-truncate">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Soluta, corrupti porro. Fugiat corrupti aut ab adipisci
+                      temporibus molestias deserunt. Tenetur eaque quaerat iste
+                      aspernatur quo harum incidunt inventore at sint!
+                    </p>
+                  </div>
+                </div>
+                <div class="card" id="darker" style="width: 12rem; height: 16.5rem">
+                  <img
+                    src="https://hips.hearstapps.com/hmg-prod/images/archetypes-1661260594.jpeg"
+                    class="card-img-top pt-3 pl-3 pr-3"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Archetypes</h5>
+                    <p class="card-text text-truncate">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Soluta, corrupti porro. Fugiat corrupti aut ab adipisci
+                      temporibus molestias deserunt. Tenetur eaque quaerat iste
+                      aspernatur quo harum incidunt inventore at sint!
+                    </p>
+                  </div>
+                </div>
+                <div class="card" id="darker" style="width: 12rem; height: 16.5rem">
+                  <img
+                    src="https://lite-images-i.scdn.co/image/ab6765630000ba8a74ab03748c1f2e843974a968"
+                    class="card-img-top pt-3 pl-3 pr-3"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-truncate">Michelle Obama Podcast</h5>
+                    <p class="card-text text-truncate">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Soluta, corrupti porro. Fugiat corrupti aut ab adipisci
+                      temporibus molestias deserunt. Tenetur eaque quaerat iste
+                      aspernatur quo harum incidunt inventore at sint!
+                    </p>
+                  </div>
+                </div>
+                <div class="card" id="darker" style="width: 12rem; height: 16.5rem">
+                  <img
+                    src="https://images.squarespace-cdn.com/content/v1/5ffdb7a83ff3ea0604bdfef2/0b181a38-bd03-4c82-9f89-210cc302b3d0/1024x1024+IG.jpg"
+                    class="card-img-top pt-3 pl-3 pr-3"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-truncate">You Heard Me Write</h5>
+                    <p class="card-text text-truncate">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Soluta, corrupti porro. Fugiat corrupti aut ab adipisci
+                      temporibus molestias deserunt. Tenetur eaque quaerat iste
+                      aspernatur quo harum incidunt inventore at sint!
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-      </div>
-        
     <!-- Music Player Bar -->
     <div class="container-fluid footer fixed-bottom musicPlayer">
       <div class="row mt-3">
