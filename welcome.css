@@ -4,6 +4,7 @@ body {
 #first {
   background-color: black;
   padding-left: 3rem;
+  height: 90rem;
 }
 #logo {
   width: 10rem;
@@ -43,6 +44,8 @@ body {
   margin-right: 0.2rem;
   margin-left: 1.5rem;
   margin-top: 1rem;
+  background-color: black;
+  color: white;
 }
 .col-10 {
   background-image: linear-gradient(
@@ -143,11 +146,11 @@ body {
   border-radius: 5px;
 }
 .background-card img {
-  width: 80px;
+  width: 5rem;
 }
 .everycard {
-  height: 80px;
-  width: 300px;
+  height: 6rem;
+  width: 20rem;
 }
 .card-title {
   font-weight: 600;
@@ -177,4 +180,14 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+.leftArrow {
+  width: 4rem;
+  aspect-ratio: 1/1;
+  background-color: black;
+}
+.rightArrow {
+  width: 2vw;
+  aspect-ratio: 1/1;
+  background-color: rgba(0, 0, 0, 0.577);
 }
