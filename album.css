@@ -131,14 +131,19 @@
   border-bottom: 1px solid rgba(128, 128, 128, 0.235);
 }
 
+/* Music Player Bottom */
+
 .musicPlayer {
-  height: 8vh;
+  min-height: 100px;
+  flex-grow: 0;
+  width: auto;
   background-color: rgb(30, 30, 30);
   color: white;
 }
 
 .playerSongImageDiv {
-  min-width: 4vw;
+  min-width: 70px;
+  max-height: 70px;
   aspect-ratio: 1/1;
   overflow: hidden;
 }
@@ -169,4 +174,5 @@
   aspect-ratio: 1/1;
   background-color: white;
   color: black;
+  font-size: 1.2vh;
 }
