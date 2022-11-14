@@ -66,6 +66,50 @@
         color: grey;
         margin-left: 1rem;
       }
+      .musicPlayer {
+  min-height: 101px;
+  flex-grow: 0;
+  width: auto;
+  background-color: rgb(30, 30, 30);
+  color: white;
+}
+
+.playerSongImageDiv {
+  min-width: 71px;
+  max-height: 71px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+.playerSongImage {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.playerSongTitle {
+  font-size: 0.9vh;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.playerSongArtist {
+  font-size: 0.8vh;
+}
+
+.iconsDivPlayer {
+  font-size: 1vh;
+}
+
+.iconPlay {
+  height: 2vh;
+  aspect-ratio: 1/1;
+  background-color: white;
+  color: black;
+  font-size: 1.2vh;
+}
+
     </style>
   </head>
   <body>
