@@ -15,14 +15,34 @@
   background-color: rgba(0, 0, 0, 0.38);
 }
 
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #262626;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 /* Navbar */
 
 #first {
   background-color: black;
-  padding-left: 3rem;
+  font-size: 1vh;
 }
 #logo {
-  width: 10rem;
+  width: 10vw;
 }
 #nav-1 .nav-link,
 #nav-2 .nav-link,
@@ -34,11 +54,11 @@
 }
 #nav-3 .nav-link:hover {
   color: white;
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.206);
 }
 #nav-1 .nav-link:hover,
 #nav-2 .nav-link:hover {
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.206);
   color: white;
 }
 
@@ -47,6 +67,49 @@
   overflow-y: scroll;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.navHomeDiv {
+  width: 2vw;
+  aspect-ratio: 1/1;
+  font-size: 2vh;
+  font-weight: lighter;
+}
+.navIconDivs {
+  min-width: 2vw;
+  aspect-ratio: 1/1;
+  font-size: 1.5vh;
+  font-weight: lighter;
+}
+
+.creatPlaylistDiv {
+  min-width: 2vw;
+  aspect-ratio: 1/1;
+  background-color: lightgrey;
+  color: black;
+  font-size: 1.5vh;
+  font-weight: bolder;
+}
+
+.navSpans {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.navHeartDiv {
+  background: rgb(38, 8, 185);
+  background: linear-gradient(
+    133deg,
+    rgba(38, 8, 185, 1) 0%,
+    rgba(121, 90, 142, 1) 60%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  min-width: 2vw;
+  aspect-ratio: 1/1;
+  color: white;
+  font-size: 1vh;
+  font-weight: bolder;
 }
 
 /* 1st Row (Arrows) */
