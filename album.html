@@ -30,29 +30,27 @@
           <br class="" />
         </nav>
         <!-- Content -->
-        <div class="col-10 bg-danger">
+        <div class="contentDiv col-10">
           <div class="row arrows justify-content-between">
             <!-- Arrows -->
             <div
               class="col-1 d-flex justify-content-between align-items-start mt-2"
             >
               <div
-                class="leftArrow border border-dark rounded-circle bg-dark text-white text-center"
+                class="leftArrow rounded-circle text-white d-flex justify-content-center align-items-center"
               >
                 <i class="bi bi-chevron-left fa-3x"></i>
               </div>
               <div
-                class="rightArrow border border-dark rounded-circle bg-dark text-white text-center"
+                class="rightArrow rounded-circle text-white d-flex justify-content-center align-items-center"
               >
                 <i class="bi bi-chevron-right fa-3x align-self-center"></i>
               </div>
             </div>
             <!-- Account Info -->
             <div class="d-flex">
-              <div
-                class="accountInfo d-flex rounded-pill p-1 bg-dark mt-2 mr-2"
-              >
-                <div class="profilePhotoDiv rounded-circle">
+              <div class="accountInfo d-flex rounded-pill p-1 mt-2 mr-2">
+                <div class="profilePhotoDiv rounded-circle mr-1">
                   <img
                     src="https://image.shutterstock.com/mosaic_250/2780032/1770074666/stock-photo-head-shot-of-african-self-assured-executive-manager-portrait-successful-staff-member-company-1770074666.jpg"
                     alt="Profile Foto"
@@ -70,24 +68,27 @@
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-2 mt-2">
+          <!-- Album Cover + Info -->
+          <div class="row d-flex my-3">
+            <div class="col-2 mt-2 d-flex align-items-end">
               <img
                 src="https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/114/posts/34296/final_image/Final-image.jpg"
                 alt="Album Cover"
-                class="albumCover align-self-end"
+                class="albumCover"
               />
             </div>
-            <div class="col-10 d-flex align-items-end mt-2 text-white h-auto">
+            <div class="col-10 d-flex align-items-end mt-2 text-white">
               <div class="d-flex flex-column">
-                <div>Album</div>
-                <h1>Bohemian Rhapsody (The Original Soundtrack)</h1>
+                <div class="musicype text-uppercase">Album</div>
+                <h2 class="albumTitle">
+                  Bohemian Rhapsody (The Original Soundtrack)
+                </h2>
                 <div class="d-flex">
                   <div class="artistImageDiv rounded-circle">
                     <img
                       src="https://image.shutterstock.com/mosaic_250/2780032/1770074666/stock-photo-head-shot-of-african-self-assured-executive-manager-portrait-successful-staff-member-company-1770074666.jpg"
                       alt="Profile Foto"
-                      class="profileImg"
+                      class="artistImg"
                     />
                   </div>
                   <div class="albumInfo d-flex ml-1">
@@ -101,7 +102,128 @@
               </div>
             </div>
           </div>
+          <!-- Play, Heart, Dots -->
+          <div class="row bgBlackTransparent">
+            <div class="col-12 d-flex align-items-center my-3">
+              <div
+                class="playButton mr-3 rounded-circle text-white d-flex justify-content-center align-items-center"
+              >
+                <i class="bi bi-play-fill"></i>
+              </div>
+              <div class="heart mx-3 text-white">
+                <i class="bi bi-heart"></i>
+              </div>
+              <div class="dots text-white mx-3">
+                <i class="bi bi-three-dots"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Table -->
+          <div class="row bgBlackTransparent">
+            <table class="table table-borderless mx-3 mt-3 text-white">
+              <thead class="theadBorderBottom">
+                <tr>
+                  <th class="thMinWidth" scope="col">#</th>
+                  <th scope="col">TITLE</th>
+                  <th scope="col" class="text-right pr-5">
+                    <i class="bi bi-clock"></i>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="thMinWidth" scope="row">1</th>
+                  <td>Mark</td>
+                  <td class="text-right pr-5">0:25</td>
+                </tr>
+                <tr>
+                  <th class="thMinWidth" scope="row">2</th>
+                  <td>Jacob</td>
+                  <td class="text-right pr-5">4:55</td>
+                </tr>
+                <tr>
+                  <th class="thMinWidth" scope="row">3</th>
+                  <td>Larry the Bird</td>
+                  <td class="text-right pr-5">3:16</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
+      </div>
+    </div>
+    <!-- Music Player Bar -->
+    <div class="container-fluid footer fixed-bottom musicPlayer">
+      <div class="row mt-3">
+        <!-- Left side -->
+        <div class="col-3 d-flex">
+          <div class="playerSongImageDiv">
+            <img
+              src="https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/114/posts/34296/final_image/Final-image.jpg"
+              alt="Song Cover"
+              class="playerSongImage"
+            />
+          </div>
+          <div class="playerSongInfo d-flex flex-column justify-content-center">
+            <div class="playerSongTitle px-2">
+              Another One Bites The Dust - Remastered 2011
+            </div>
+            <div class="playerSongArtist px-2">Queen</div>
+          </div>
+          <div class="playerSongIcons d-flex align-items-center">
+            <div class="playerHeart px-3"><i class="bi bi-heart"></i></div>
+            <div class="playerLaptop"><i class="bi bi-laptop"></i></div>
+          </div>
+        </div>
+        <!-- center -->
+        <div class="col-7 d-flex flex-column text-white">
+          <div class="iconsDivPlayer d-flex justify-content-center">
+            <div
+              class="iconShuffle px-2 d-flex justify-content-center align-items-center"
+            >
+              <i class="bi bi-shuffle"></i>
+            </div>
+            <div
+              class="iconPrevious px-2 d-flex justify-content-center align-items-center"
+            >
+              <i class="bi bi-skip-start-fill"></i>
+            </div>
+            <div
+              class="iconPlay mx-2 rounded-circle d-flex justify-content-center align-items-center"
+            >
+              <i class="bi bi-play-fill"></i>
+            </div>
+            <div
+              class="iconNext px-2 d-flex justify-content-center align-items-center"
+            >
+              <i class="bi bi-skip-end-fill"></i>
+            </div>
+            <div
+              class="iconRepeat px-2 d-flex justify-content-center align-items-center"
+            >
+              <i class="bi bi-repeat"></i>
+            </div>
+          </div>
+          <!-- Progress Bar -->
+          <div
+            class="progressBarDiv d-flex justify-content-center align-items-center"
+          >
+            <div class="timePlayed">0:12</div>
+            <div class="progress mx-2" style="height: 1px">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="min-width: 30vw"
+                aria-valuenow="10"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <div class="timeLeft">3:34</div>
+          </div>
+        </div>
+        <!-- Right side -->
+        <div class="col-3 d-flex"></div>
       </div>
     </div>
     <script src="album.js"></script>

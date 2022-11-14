@@ -1,13 +1,36 @@
-/* First Row (Arrows) */
+/* Content Div (Backgroundcolors) */
 
-.leftArrow,
+.contentDiv {
+  height: 92vh;
+  background: #dc0a9d;
+  background: linear-gradient(
+    180deg,
+    rgba(185, 8, 110, 1) 0%,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.bgBlackTransparent {
+  background-color: rgba(0, 0, 0, 0.38);
+}
+
+/* 1st Row (Arrows) */
+
+.leftArrow {
+  width: 2vw;
+  aspect-ratio: 1/1;
+  background-color: black;
+}
 .rightArrow {
   width: 2vw;
   aspect-ratio: 1/1;
+  background-color: rgba(0, 0, 0, 0.577);
 }
 
 .accountInfo {
   width: 10vw;
+  background-color: black;
 }
 
 .profilePhotoDiv {
@@ -16,10 +39,11 @@
   overflow: hidden;
 }
 
-.profileImg {
+.profileImg,
+.artistImg {
   width: auto;
-  height: 2vh;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
 }
 
 .profileName {
@@ -34,10 +58,10 @@
   font-size: 0.8vh;
 }
 
-/* Second Row (Album Cover) */
+/* 2nd Row (Album Cover) */
 
 .albumCover {
-  width: 12vw;
+  min-width: 12vw;
   aspect-ratio: 1/1;
 }
 
@@ -45,4 +69,104 @@
   width: 2vw;
   aspect-ratio: 1/1;
   overflow: hidden;
+}
+
+.musicType {
+  font-size: 0.8vh;
+  font-weight: bold;
+}
+
+.albumTitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}
+
+.artist {
+  font-weight: bolder;
+}
+
+.releaseYear,
+.quantityDuration,
+.separaterDot {
+  color: rgba(211, 211, 211, 0.64);
+}
+
+/* 3rd Row Play, Heart, Dots */
+
+.playButton {
+  background-color: rgb(14, 236, 88);
+  width: 2.5vw;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  font-size: 2vh;
+}
+
+.heart {
+  font-size: 1.5vh;
+}
+
+.dots {
+  font-size: 1.5vh;
+}
+
+/* Table */
+
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > td,
+.table-borderless > tfoot > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+  border: none;
+  font-weight: 100;
+}
+
+.thMinWidth {
+  width: 1%;
+}
+
+.theadBorderBottom {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.235);
+}
+
+.musicPlayer {
+  height: 8vh;
+  background-color: rgb(30, 30, 30);
+  color: white;
+}
+
+.playerSongImageDiv {
+  min-width: 4vw;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+.playerSongImage {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.playerSongTitle {
+  font-size: 0.9vh;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.playerSongArtist {
+  font-size: 0.8vh;
+}
+
+.iconsDivPlayer {
+  font-size: 1vh;
+}
+
+.iconPlay {
+  height: 2vh;
+  aspect-ratio: 1/1;
+  background-color: white;
+  color: black;
 }
