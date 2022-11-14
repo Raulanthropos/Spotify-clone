@@ -6,7 +6,7 @@
   background: linear-gradient(
     180deg,
     rgba(185, 8, 110, 1) 0%,
-    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 1) 60%,
     rgba(0, 0, 0, 1) 100%
   );
 }
@@ -160,6 +160,7 @@
 .albumCover {
   min-width: 12vw;
   aspect-ratio: 1/1;
+  box-shadow: 0px 0px 30px 15px rgba(0, 0, 0, 0.56);
 }
 
 .artistImageDiv {
@@ -226,6 +227,16 @@
 
 .theadBorderBottom {
   border-bottom: 1px solid rgba(128, 128, 128, 0.235);
+}
+
+.tableTitle {
+  font-weight: bold;
+  font-size: 1vh;
+}
+
+.tableArtist {
+  font-size: 0.8vh;
+  color: rgba(255, 255, 255, 0.743);
 }
 
 /* Music Player Bottom */
