@@ -1,0 +1,48 @@
+/* First Row (Arrows) */
+
+.leftArrow,
+.rightArrow {
+  width: 2vw;
+  aspect-ratio: 1/1;
+}
+
+.accountInfo {
+  width: 10vw;
+}
+
+.profilePhotoDiv {
+  width: 2vw;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+.profileImg {
+  width: auto;
+  height: 2vh;
+  object-fit: contain;
+}
+
+.profileName {
+  font-size: 0.8vh;
+  font-weight: bolder;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.profileArrowDown {
+  font-size: 0.8vh;
+}
+
+/* Second Row (Album Cover) */
+
+.albumCover {
+  width: 12vw;
+  aspect-ratio: 1/1;
+}
+
+.artistImageDiv {
+  width: 2vw;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
