@@ -142,15 +142,13 @@
           </ul>
         </div>
         <div class="container col-10" id="main-container">
-          <div
-            class="container flex-column align-items-start justify-content-end pl-0"
-          >
-            <div class="d-flex">
+          <div class="container d-flex flex-column align-items-start justify-content-end pl-0">
+            <div class="d-flex mt-5">
               <i class="bi bi-patch-check-fill" id="verified-btn"></i>
               <p class="lead">Verified artist</p>
             </div>
-            <h1>Queen</h1>
-            <p class="mt-5 mb-0 col-12 justify-self-end">
+            <h1 class="d-flex mt-5">Queen</h1>
+            <p class="mt-5">
               37,120,133 monthly listeners
             </p>
           </div>
@@ -174,6 +172,12 @@
               Follow
             </p>
             <p class="d-inline" style="margin-block: auto" id="dots">...</p>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Search for an artist by ID" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="btn btn-primary" id="search-btn">Search</button>
+              </div>
+            </div>
           </div>
           <div class="container mt-5" id="playlist">
             <div class="row" id="playlist-row">
@@ -364,5 +368,6 @@
       integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
