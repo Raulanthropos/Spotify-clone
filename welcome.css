@@ -4,7 +4,8 @@ body {
 #first {
   background-color: black;
   padding-left: 3rem;
-  height: 90rem;
+  height: 100vh;
+  overflow: auto;
 }
 #logo {
   width: 10rem;
@@ -33,6 +34,12 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+#mob {
+  display: none;
+}
+#nav-5 .nav-link {
+  color: white;
+}
 .prev-next-buttons {
   cursor: not-allowed;
 }
@@ -47,7 +54,7 @@ body {
   background-color: black;
   color: white;
 }
-.col-10 {
+#col-10 {
   background-image: linear-gradient(
     to top,
     #121212,
@@ -161,6 +168,67 @@ body {
 }
 .gridofcards {
   display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 1200px) {
+  .gridofcards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .accountInfo {
+    width: 10rem;
+  }
+  #first {
+    display: none;
+  }
+  #mob {
+    display: contents;
+    background-color: black;
+    display: block;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .gridofcards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #nav-3,
+  #nav-4 {
+    display: none;
+  }
+  .prev-next-buttons {
+    visibility: hidden;
+  }
+  .accountInfo {
+    width: 10rem;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .accountInfo {
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .everycard,
+  .card {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .accountInfo {
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .accountInfo {
+    width: 20rem;
+    align-self: center;
+  }
 }
 #darker {
   background-color: rgba(48, 48, 48, 0.301);
@@ -191,7 +259,7 @@ body {
   background-color: black;
 }
 .rightArrow {
-  width: 2vw;
+  width: 4rem;
   aspect-ratio: 1/1;
   background-color: rgba(0, 0, 0, 0.577);
 }
