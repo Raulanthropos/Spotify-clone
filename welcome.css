@@ -208,6 +208,9 @@ body {
   .accountInfo {
     width: 10rem;
   }
+  #first {
+    height: 560vh;
+  }
 }
 
 @media screen and (max-width: 1920px) {
