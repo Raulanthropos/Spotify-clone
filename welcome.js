@@ -61,22 +61,3 @@
     }
   };
 */
-
-window.onload = async () => {
-  const options = {
-    method: "GET",
-  };
-  const baseUrl = "https://striveschool-api.herokuapp.com/api/deezer/album/";
-  const response = await fetch(baseUrl + options);
-  const welcome = await response.json();
-  const artistName = album.artist.name;
-  const artistPicture = album.artist.picture_xl;
-  const albumName = album.title;
-  const recordType = album.record_type;
-  const coverXl = album.cover_xl;
-  const releaseYear = album.release_date.slice(0, 4);
-  const quantityTracks = album.nb_tracks;
-  const hours = parseInt((album.duration * 0.016666666666666) / 60);
-  const minutes = parseInt((album.duration * 0.016666666666666) % 60);
-  const tracks = album.tracks.data;
-};
