@@ -1,10 +1,6 @@
 window.onload = async () => {
   const options = {
     method: "GET",
-    headers: {
-      "X-RapidAPI-Key": "89d77c93e5msh240390a5bb1f945p10f71bjsna333c8309168",
-      "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com",
-    },
   };
 
   const baseUrl = "https://striveschool-api.herokuapp.com/api/deezer/album/";
