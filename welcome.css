@@ -163,6 +163,7 @@ body {
 .everycard {
   height: 5rem;
   width: 25rem;
+  cursor: pointer;
 }
 
 .card-title {
@@ -171,6 +172,9 @@ body {
 .gridofcards {
   display: flex;
   flex-direction: row;
+}
+.card {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
@@ -209,7 +213,7 @@ body {
     width: 10rem;
   }
   #first {
-    height: 560vh;
+    height: 700vh;
   }
 }
 
