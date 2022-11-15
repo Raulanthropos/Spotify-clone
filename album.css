@@ -116,11 +116,13 @@
 
 .leftArrow {
   width: 2vw;
+  min-width: 24px;
   aspect-ratio: 1/1;
   background-color: black;
 }
 .rightArrow {
   width: 2vw;
+  min-width: 24px;
   aspect-ratio: 1/1;
   background-color: rgba(0, 0, 0, 0.577);
 }
@@ -132,6 +134,7 @@
 
 .profilePhotoDiv {
   width: 2vw;
+  min-width: 24px;
   aspect-ratio: 1/1;
   overflow: hidden;
 }
@@ -165,11 +168,12 @@
 
 .artistImageDiv {
   width: 2vw;
+  min-width: 24px;
   aspect-ratio: 1/1;
   overflow: hidden;
 }
 
-.musicType {
+.recordType {
   font-size: 0.8vh;
   font-weight: bold;
 }
