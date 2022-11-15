@@ -61,6 +61,16 @@
     }
   };
 */
+const options = {
+  method: "GET",
+};
+
+const baseUrl = "https://striveschool-api.herokuapp.com/api/deezer/album/";
+const albumId = "75621062";
+//const response = await fetch(baseUrl + albumId, options);
+
+//const album = await response.json();
+//console.log(album);
 const horizontalCard = async () => {
   let Hcard = document.querySelector(".con");
   Hcard.innerHTML = "";
