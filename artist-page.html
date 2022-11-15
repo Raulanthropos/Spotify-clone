@@ -14,7 +14,134 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container" id="main-container">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- NAVBAR -->
+        <div id="first" class="col-2">
+          <ul id="nav-1" class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link my-3" href="#">
+                <img
+                  id="logo"
+                  src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_CMYK_White.png"
+                  alt="Logo"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center" href="#"
+                ><div
+                  class="navHomeDiv d-flex justify-content-center align-items-center"
+                >
+                  <i class="bi bi-house-door-fill"></i>
+                </div>
+                <span class="pl-2 navSpans">Home</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center" href="#"
+                ><div
+                  class="navIconDivs d-flex justify-content-center align-items-center"
+                >
+                  <i class="bi bi-search"></i>
+                </div>
+                <span class="pl-2 navSpans">Search</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center" href="#"
+                ><div
+                  class="navIconDivs d-flex justify-content-center align-items-center"
+                >
+                  <i class="bi bi-layout-three-columns"></i>
+                </div>
+                <span class="pl-2 navSpans">Your Library</span></a
+              >
+            </li>
+          </ul>
+          <hr />
+          <ul id="nav-2" class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center" href="#">
+                <div
+                  class="creatPlaylistDiv d-flex justify-content-center align-items-center"
+                >
+                  <i class="bi bi-plus"></i>
+                </div>
+                <span class="pl-2 navSpans">Create Playlist</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center" href="#">
+                <div
+                  class="navHeartDiv d-flex justify-content-center align-items-center"
+                >
+                  <i class="bi bi-heart-fill"></i>
+                </div>
+                <span class="pl-2 navSpans">Liked Songs</span></a
+              >
+            </li>
+          </ul>
+          <hr style="border: solid 0.5px rgba(128, 128, 128, 0.43)" />
+          <ul id="nav-3" class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Funky Heavy Bluesy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Your Top Songs 2020</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">In Love With You - Erykah B...</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">This is Rod Stewart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">FRANCHISE ft.Young Thug...</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Your Top Songs 2019</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Palleggio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">This is Joe Bonamassa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Jun19</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Jack 30th Party 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Jack 30th Party</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">This is Opeth</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Metal Ballads</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">New Playlist</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Your Top Songs 2018</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Jazz Classics Blue Note Editi...</a>
+            </li>
+          </ul>
+          <ul id="nav-4" class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                ><i class="bi bi-arrow-down-circle"></i>
+                <span>Install App</span></a
+              >
+            </li>
+          </ul>
+        </div>
+    <div class="container col-10" id="main-container">
       <div
         class="container flex-column align-items-start justify-content-end pl-0">
         <div class="d-flex">
@@ -25,10 +152,15 @@
         <p class="mt-5 mb-0 col-12 justify-self-end">37,120,133 monthly listeners</p>
       </div>
 </div>
-<div class="container" id="playlist-container">
+<div class="container col-10 mr-0" id="playlist-container">
+  <div class="row d-flex justify-content-start">
+  <div class="pauseButton mr-3 rounded-circle text-white d-flex justify-content-center align-items-center">
     <i class="bi bi-pause-circle-fill col-2" id="pause-button"></i>
-    <p class="d-inline border" id="follow">Follow</p>
-    <p class="d-inline" id="dots">...</p>
+              </div>
+
+    <p class="d-inline border" style="margin-block: auto" id="follow">Follow</p>
+    <p class="d-inline" style="margin-block: auto" id="dots">...</p>
+  </div>
     <div class="container mt-5" id="playlist">
       <div class="row" id="playlist-row">
         <div class="col-12 d-flex mb-2">
@@ -78,6 +210,8 @@
         </div>
       </div>
     </div>
+</div>
+</div>
 </div>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
