@@ -4,7 +4,7 @@ body {
 #first {
   background-color: black;
   padding-left: 3rem;
-  height: 100vh;
+  height: 130vh;
   overflow: auto;
 }
 #logo {
@@ -71,6 +71,7 @@ body {
     #5e0506
   );
   color: white;
+  overflow-y: scroll;
 }
 #podcast-hook {
   color: grey;
@@ -160,9 +161,10 @@ body {
   width: 5rem;
 }
 .everycard {
-  height: 6rem;
-  width: 20rem;
+  height: 5rem;
+  width: 25rem;
 }
+
 .card-title {
   font-weight: 600;
 }
