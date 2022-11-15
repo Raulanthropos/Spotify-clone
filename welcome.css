@@ -34,6 +34,66 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+.navActions {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.navScroll {
+  overflow: hidden;
+  overflow-y: scroll;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 30vh;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.navHomeDiv {
+  width: 2vw;
+  aspect-ratio: 1/1;
+  font-size: 2vh;
+  font-weight: lighter;
+}
+.navIconDivs {
+  min-width: 2vw;
+  aspect-ratio: 1/1;
+  font-size: 1.5vh;
+  font-weight: lighter;
+}
+
+.creatPlaylistDiv {
+  min-width: 2vw;
+  aspect-ratio: 1/1;
+  background-color: lightgrey;
+  color: black;
+  font-size: 1.5vh;
+  font-weight: bolder;
+}
+
+.navSpans {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.navHeartDiv {
+  background: rgb(38, 8, 185);
+  background: linear-gradient(
+    133deg,
+    rgba(38, 8, 185, 1) 0%,
+    rgba(121, 90, 142, 1) 60%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  min-width: 2vw;
+  aspect-ratio: 1/1;
+  color: white;
+  font-size: 1vh;
+  font-weight: bolder;
+}
+
 #mob {
   display: none;
 }
