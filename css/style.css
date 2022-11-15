@@ -87,6 +87,22 @@ h2 {
     object-fit: cover;
 }
 
+.current-track {
+    width: 100px;
+    height: 100px;
+    /* object-fit: cover; */
+}
+
+figcaption {
+    font-size: 12px;
+    opacity: .6;
+}
+
+#playlist-current-track {
+    color: var(--color-text-primary);
+    list-style-type: none;
+}
+
 #see-more {
     color: var(--color-text-primary);
     list-style-type: none;
