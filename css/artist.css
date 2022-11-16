@@ -100,7 +100,7 @@ h1 {
 
 }
 
-#pause-button, #follow, #dots {
+#pause-button, #follow, #dots, #see-more {
     cursor: pointer;
 }
 
@@ -294,3 +294,47 @@ figcaption {
   .col-md-1, .rank, .track-title, .duration, .current-track-title {
     margin-block: auto;
   }
+
+  @media screen and (max-width: 768px) {
+    #text-container {
+     margin-top: -28rem;
+    }
+
+    .rank {
+        display: none;
+    }
+
+    #artist-pick, #tag-pick {
+        display: none;
+    }
+
+    .track-title {
+        text-overflow: ellipsis;
+        /* Needed to make it work */
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    #playlist-container {
+        margin-top: -28.5em;
+    }
+}
+@media screen and (max-width: 900px) {
+    #text-container {
+     margin-top: -24rem;
+    }
+
+    #playlist-container {
+        margin-top: -30.5em;
+    }
+}
+  @media screen and (max-width: 1700px) {
+       #text-container {
+        margin-top: -20rem;
+       }
+
+       #playlist-container {
+        margin-top: -34.5em;
+    }
+  }
+

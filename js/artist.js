@@ -11,45 +11,37 @@ let currentTrack = document.querySelector(".current-track");
 let currentTrackTitle = document.querySelector(".current-track-title");
 let playSongBtn = document.querySelectorAll(".play-song");
 
-// const playSong = (event) => {
-//   console.log(event);
-//   // return fethcedData.preview;
-// }
-
 const theTrackList = async (tracklist) => {
   const newFetch = await fetch(tracklist);
   const fetchedTrackList = await newFetch.json();
   arrayOfFetchedTrackList = fetchedTrackList.data;
-  for (let i=0; i<arrayOfFetchedTrackList.length; i++) {
-  const minutes = parseInt((arrayOfFetchedTrackList[i].duration) / 60);
-  let seconds = parseInt((arrayOfFetchedTrackList[i].duration) % 60);
-  if (seconds <10) {
-    seconds = "0" + seconds;
-    console.log(seconds)
+  for (let i = 0; i < arrayOfFetchedTrackList.length; i++) {
+    const minutes = parseInt(arrayOfFetchedTrackList[i].duration / 60);
+    let seconds = parseInt(arrayOfFetchedTrackList[i].duration % 60);
+    if (seconds < 10) {
+      seconds = "0" + seconds; //For number of seconds <10, this ensures the seconds will be displayed correctly, with the number 0 assigned in the front, right after the colon.
+      console.log(seconds);
+    }
+    const rank = arrayOfFetchedTrackList[i].rank;
+    const duration = minutes + ":" + seconds;
+    trackTitle[i].innerText = arrayOfFetchedTrackList[i].title;
+    trackRank[i].innerText = rank.toLocaleString("en-us");
+    monthlyListeners.innerText =
+      rank.toLocaleString("en-us") + " monthly listeners"; //This function ensures that, if the number has more than 3 digits, every 3 digits will be separated by a comma.
+    trackDuration[i].innerText = duration;
+    currentTrackTitle.innerText = trackTitle[0].innerText;
   }
-  const rank = arrayOfFetchedTrackList[i].rank;
-  const duration = minutes + ":" + seconds;
-  trackTitle[i].innerText = arrayOfFetchedTrackList[i].title;
-  trackRank[i].innerText = rank.toLocaleString("en-us");
-  monthlyListeners.innerText = rank.toLocaleString("en-us") + " monthly listeners";
-  trackDuration[i].innerText = duration;
-  currentTrackTitle.innerText = trackTitle[0].innerText;
-  let song = arrayOfFetchedTrackList[i].preview;
-  // console.log(song);
-    // playSongBtn.addEventListener('click', playSong(song));
-  }
-  console.log(arrayOfFetchedTrackList);
-}
+};
 
 window.onload = async () => {
-    const options = {
-      method: "GET"
-    };
-  
-    const baseUrl = "https://striveschool-api.herokuapp.com/api/deezer/artist/";
-    let artistId = "410";
-    const response = await fetch(baseUrl + artistId, options);
-    const artist = await response.json();
+  const options = {
+    method: "GET",
+  };
+
+  const baseUrl = "https://striveschool-api.herokuapp.com/api/deezer/artist/";
+  let artistId = "410";
+  const response = await fetch(baseUrl + artistId, options);
+  const artist = await response.json();
   const artistName = artist.name;
   const artistPicture = artist.picture_small;
   const tracklist = artist.tracklist;
@@ -60,7 +52,5 @@ window.onload = async () => {
   headerInput.innerText = artistName;
   mainImage.src = artist.picture_xl;
   theTrackList(tracklist);
-  };
+};
 
-
-  //
