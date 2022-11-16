@@ -1,0 +1,354 @@
+body {
+  font-size: x-large;
+}
+#first {
+  background-color: black;
+  padding-left: 2rem;
+  height: 130vh;
+  overflow: auto;
+  min-width: 10rem;
+}
+#logo {
+  width: 10rem;
+}
+#nav-1 .nav-link,
+#nav-2 .nav-link,
+#nav-4 .nav-link {
+  color: white;
+}
+#nav-3 .nav-link {
+  color: grey;
+}
+#nav-3 .nav-link:hover {
+  color: white;
+  background-color: grey;
+}
+#nav-1 .nav-link:hover,
+#nav-2 .nav-link:hover {
+  background-color: grey;
+  color: white;
+}
+
+#nav-3 {
+  overflow: hidden;
+  overflow-y: scroll;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.navActions {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.navScroll {
+  overflow: hidden;
+  overflow-y: scroll;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 30vh;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.navHomeDiv {
+  width: 2vw;
+  aspect-ratio: 1/1;
+  font-size: 2vh;
+  font-weight: lighter;
+}
+.navIconDivs {
+  min-width: 2vw;
+  aspect-ratio: 1/1;
+  font-size: 1.5vh;
+  font-weight: lighter;
+}
+
+.creatPlaylistDiv {
+  min-width: 2vw;
+  aspect-ratio: 1/1;
+  background-color: lightgrey;
+  color: black;
+  font-size: 1.5vh;
+  font-weight: bolder;
+}
+
+.navSpans {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.navHeartDiv {
+  background: rgb(38, 8, 185);
+  background: linear-gradient(
+    133deg,
+    rgba(38, 8, 185, 1) 0%,
+    rgba(121, 90, 142, 1) 60%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  min-width: 2vw;
+  aspect-ratio: 1/1;
+  color: white;
+  font-size: 1vh;
+  font-weight: bolder;
+}
+
+#mob {
+  background-color: black;
+  display: none;
+}
+#nav-5 .nav-link {
+  color: white;
+}
+.prev-next-buttons {
+  cursor: not-allowed;
+}
+.prev-next-buttons button {
+  border-radius: 100%;
+  width: 4rem;
+  height: 4rem;
+  border: 0;
+  margin-right: 0.2rem;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  background-color: black;
+  color: white;
+}
+#col-10 {
+  background-image: linear-gradient(
+    to top,
+    #121212,
+    #121212,
+    #121212,
+    #121212,
+    #121212,
+    #161419,
+    #1a151e,
+    #201522,
+    #311327,
+    #430d24,
+    #53051b,
+    #5e0506
+  );
+  color: white;
+  overflow-y: scroll;
+}
+#podcast-hook {
+  color: grey;
+  margin-left: 1rem;
+}
+.musicPlayer {
+  min-height: 101px;
+  flex-grow: 0;
+  width: auto;
+  background-color: rgb(30, 30, 30);
+  color: white;
+}
+
+.playerSongImageDiv {
+  min-width: 71px;
+  max-height: 71px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+.playerSongImage {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.playerSongTitle {
+  font-size: 0.9vh;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.playerSongArtist {
+  font-size: 0.8vh;
+}
+
+.iconsDivPlayer {
+  font-size: 1vh;
+}
+
+.iconPlay {
+  height: 2vh;
+  aspect-ratio: 1/1;
+  background-color: white;
+  color: black;
+  font-size: 1.2vh;
+}
+.accountInfo {
+  width: 10vw;
+  background-color: black;
+}
+
+.profilePhotoDiv {
+  width: 3.5rem;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+.profileImg,
+.artistImg {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.profileName {
+  font-size: 1rem;
+  font-weight: bolder;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.profileArrowDown {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #262626;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.leftArrow {
+  width: 4rem;
+  aspect-ratio: 1/1;
+  background-color: black;
+}
+.rightArrow {
+  width: 4rem;
+  aspect-ratio: 1/1;
+  background-color: rgba(0, 0, 0, 0.577);
+}
+
+.sidecards {
+  /* width: 12.5%; */
+  background-color: #322827a1;
+
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  height: 6rem;
+  align-items: center;
+  padding: 0;
+  min-width: 17rem;
+  min-height: 10rem;
+}
+.sidetext {
+  margin: 0;
+  padding-block: 2em;
+  min-width: 5rem;
+}
+.sidecards img {
+  object-fit: cover;
+  height: 7rem;
+  min-width: 7rem;
+  /* width: 80px; */
+  padding: 0;
+}
+
+.albumCard {
+  width: 11%;
+  background-color: #181818;
+  padding: 0.2em;
+  margin-right: 0.4em;
+  min-width: 13rem;
+}
+img.col-11 {
+  padding: 0;
+  margin-left: 0.5em;
+  padding-top: 0.2em;
+}
+.albumText {
+  padding-top: 0.6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0.6em;
+}
+.albumText p {
+  margin-bottom: 0em;
+}
+.albumText p:nth-child(2) {
+  font-weight: 300;
+  padding-bottom: 1em;
+}
+#cardstart {
+  margin-top: 4em;
+}
+a:link {
+  color: wheat;
+  text-decoration: none;
+}
+a:hover {
+  color: grey;
+}
+@media screen and (max-width: 768px) {
+  #cardstart,
+  #firstAlbumRow,
+  #secondAlbumRow,
+  #topsidecards,
+  #mainrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #first,
+  .prev-next-buttons {
+    display: none;
+  }
+  #mob {
+    display: contents;
+  }
+  #nav-5 {
+    background-color: black;
+    width: 100vw;
+  }
+  .accountInfo {
+    width: 15rem;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .accountInfo {
+    width: 15rem;
+    display: flex;
+    align-items: flex-end;
+  }
+  #first {
+    height: 170vh;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #first {
+    height: 230vh;
+  }
+}
