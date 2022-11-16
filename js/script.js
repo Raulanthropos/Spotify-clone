@@ -22,14 +22,18 @@ const theTrackList = async (tracklist) => {
   arrayOfFetchedTrackList = fetchedTrackList.data;
   for (let i=0; i<arrayOfFetchedTrackList.length; i++) {
   const minutes = parseInt((arrayOfFetchedTrackList[i].duration) / 60);
-  const seconds = parseInt((arrayOfFetchedTrackList[i].duration) % 60);
+  let seconds = parseInt((arrayOfFetchedTrackList[i].duration) % 60);
+  if (seconds <10) {
+    seconds = "0" + seconds;
+    console.log(seconds)
+  }
   const rank = arrayOfFetchedTrackList[i].rank;
   const duration = minutes + ":" + seconds;
   trackTitle[i].innerText = arrayOfFetchedTrackList[i].title;
-  trackRank[i].innerText = rank;
-  monthlyListeners.innerText = rank + " monthly listeners";
+  trackRank[i].innerText = rank.toLocaleString("en-us");
+  monthlyListeners.innerText = rank.toLocaleString("en-us") + " monthly listeners";
   trackDuration[i].innerText = duration;
-  currentTrackTitle.innerText = trackTitle[i].innerText;
+  currentTrackTitle.innerText = trackTitle[0].innerText;
   let song = arrayOfFetchedTrackList[i].preview;
   // console.log(song);
     // playSongBtn.addEventListener('click', playSong(song));
@@ -43,7 +47,7 @@ window.onload = async () => {
     };
   
     const baseUrl = "https://striveschool-api.herokuapp.com/api/deezer/artist/";
-    let artistId = "1501";
+    let artistId = "410";
     const response = await fetch(baseUrl + artistId, options);
     const artist = await response.json();
   const artistName = artist.name;
@@ -55,5 +59,8 @@ window.onload = async () => {
   currentTrack.src = artistPicture;
   headerInput.innerText = artistName;
   mainImage.src = artist.picture_xl;
-  theTrackList(tracklist, headerInput);
+  theTrackList(tracklist);
   };
+
+
+  //
