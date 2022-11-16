@@ -213,95 +213,7 @@ body {
   font-size: 1rem;
   cursor: pointer;
 }
-.background-card {
-  background-color: rgba(128, 128, 128, 0.301);
-  border-radius: 5px;
-}
-.background-card img {
-  width: 5rem;
-}
-.everycard {
-  height: 5rem;
-  width: 25rem;
-  cursor: pointer;
-}
 
-.card-title {
-  font-weight: 600;
-}
-.gridofcards {
-  display: flex;
-  flex-direction: row;
-}
-.card {
-  cursor: pointer;
-}
-
-@media screen and (max-width: 1200px) {
-  .gridofcards {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .accountInfo {
-    width: 10rem;
-  }
-  #first {
-    display: none;
-  }
-  #mob {
-    display: contents;
-    background-color: black;
-    display: block;
-    width: 100%;
-  }
-}
-@media screen and (max-width: 1600px) {
-  .gridofcards {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  #nav-3,
-  #nav-4 {
-    display: none;
-  }
-  .prev-next-buttons {
-    visibility: hidden;
-  }
-  .accountInfo {
-    width: 10rem;
-  }
-  #first {
-    height: 700vh;
-  }
-}
-
-@media screen and (max-width: 1920px) {
-  .accountInfo {
-    width: 20rem;
-  }
-}
-@media screen and (max-width: 960px) {
-  .everycard,
-  .card {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-  }
-
-  .accountInfo {
-    width: 20rem;
-  }
-}
-@media screen and (max-width: 550px) {
-  .accountInfo {
-    width: 20rem;
-    align-self: center;
-  }
-}
-#darker {
-  background-color: rgba(48, 48, 48, 0.301);
-}
 /* Scrollbar */
 /* width */
 ::-webkit-scrollbar {
@@ -331,4 +243,61 @@ body {
   width: 4rem;
   aspect-ratio: 1/1;
   background-color: rgba(0, 0, 0, 0.577);
+}
+.sidecards {
+  /* width: 12.5%; */
+  background-color: #322827a1;
+
+  margin-left: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  height: 6em;
+  align-items: center;
+  padding: 0;
+}
+.sidetext {
+  margin: 0;
+  padding-block: 2em;
+}
+.sidecards img {
+  object-fit: cover;
+  height: 100px;
+  /* width: 80px; */
+  padding: 0;
+}
+
+.albumCard {
+  width: 11%;
+  background-color: #181818;
+  padding: 0.2em;
+  margin-right: 0.4em;
+}
+img.col-11 {
+  padding: 0;
+  margin-left: 0.5em;
+  padding-top: 0.2em;
+}
+.albumText {
+  padding-top: 0.6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0.6em;
+}
+.albumText p {
+  margin-bottom: 0em;
+}
+.albumText p:nth-child(2) {
+  font-weight: 300;
+  padding-bottom: 1em;
+}
+#undersearch {
+  margin-top: 4em;
+}
+a:link {
+  color: wheat;
+  text-decoration: none;
+}
+a:hover {
+  color: grey;
 }
