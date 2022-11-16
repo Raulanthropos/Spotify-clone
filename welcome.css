@@ -95,6 +95,7 @@ body {
 }
 
 #mob {
+  background-color: black;
   display: none;
 }
 #nav-5 .nav-link {
@@ -248,20 +249,24 @@ body {
   /* width: 12.5%; */
   background-color: #322827a1;
 
-  margin-left: 1em;
-  margin-bottom: 1em;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
   display: flex;
-  height: 6em;
+  height: 6rem;
   align-items: center;
   padding: 0;
+  min-width: 17rem;
+  min-height: 10rem;
 }
 .sidetext {
   margin: 0;
   padding-block: 2em;
+  min-width: 5rem;
 }
 .sidecards img {
   object-fit: cover;
-  height: 100px;
+  height: 7rem;
+  min-width: 7rem;
   /* width: 80px; */
   padding: 0;
 }
@@ -271,6 +276,7 @@ body {
   background-color: #181818;
   padding: 0.2em;
   margin-right: 0.4em;
+  min-width: 13rem;
 }
 img.col-11 {
   padding: 0;
@@ -291,7 +297,7 @@ img.col-11 {
   font-weight: 300;
   padding-bottom: 1em;
 }
-#undersearch {
+#cardstart {
   margin-top: 4em;
 }
 a:link {
@@ -300,4 +306,46 @@ a:link {
 }
 a:hover {
   color: grey;
+}
+@media screen and (max-width: 768px) {
+  #first,
+  .prev-next-buttons {
+    display: none;
+  }
+  #mob {
+    display: contents;
+  }
+  #nav-5 {
+    background-color: black;
+    width: 100vw;
+  }
+  .accountInfo {
+    width: 15rem;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .accountInfo {
+    width: 15rem;
+    display: flex;
+    align-items: flex-end;
+  }
+  #first {
+    height: 170vh;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #first {
+    height: 230vh;
+  }
+  #mainrow,
+  #cardstart,
+  #topsidecards,
+  #firstAlbumRow,
+  #secondAlbumRow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
