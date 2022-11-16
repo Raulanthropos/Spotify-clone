@@ -200,7 +200,7 @@
   text-overflow: ellipsis;
 }
 
-.active {
+.activeOption {
   background-color: white;
   color: black !important;
 }

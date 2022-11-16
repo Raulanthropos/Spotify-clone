@@ -1,3 +1,22 @@
+const playSong = (obj) => {
+  track = JSON.parse(decodeURIComponent(obj));
+  console.log(track);
+  // PlayerInfos
+  const playerSongImage = document.querySelector(".playerSongImage");
+  playerSongImage.src = `${track.album.cover_xl}`;
+  const playerSongTitle = document.querySelector(".playerSongTitle");
+  playerSongTitle.innerText = `${track.title}`;
+  const playerSongArtist = document.querySelector(".playerSongArtist");
+  playerSongArtist.innerText = `${track.artist.name}`;
+  // Duration
+  const timeLeft = document.querySelector(".timeLeft");
+  let minutes = parseInt(track.duration / 60);
+  let modulaSeconds = track.duration % 60;
+  let secondsString = "0" + modulaSeconds;
+  let seconds = secondsString.slice(-2);
+  timeLeft.innerText = `${minutes}:${seconds}`;
+};
+
 const searchInputValue = async (event) => {
   console.log(event.target.value);
   const searchFor = event.target.value;
@@ -7,30 +26,31 @@ const searchInputValue = async (event) => {
 
   const baseUrl = `https://striveschool-api.herokuapp.com/api/deezer/search?q=`;
   const response = await fetch(baseUrl + searchFor, options);
-
   const output = await response.json();
   const tracks = output.data;
   console.log(tracks);
+  if (tracks.length > 0) {
+    //   Displaying Albums inside the table
+    let albumTable = document.getElementById("albumTable");
+    albumTable.innerHTML = "";
 
-  //   Displaying Albums inside the table
-  let albumTable = document.getElementById("albumTable");
-  albumTable.innerHTML = "";
+    for (let i = 0; i < tracks.length; i++) {
+      let minutes = parseInt(tracks[i].duration / 60);
+      let modulaSeconds = tracks[i].duration % 60;
+      let secondsString = "0" + modulaSeconds;
+      let seconds = secondsString.slice(-2);
 
-  for (let i = 0; i < tracks.length; i++) {
-    let minutes = parseInt(tracks[i].duration / 60);
-    let modulaSeconds = tracks[i].duration % 60;
-    let secondsString = "0" + modulaSeconds;
-    let seconds = secondsString.slice(-2);
-
-    albumTable.innerHTML += `<tr>
+      albumTable.innerHTML += `<tr>
                                 <th class="thMinWidth" scope="row">${[
                                   i + 1,
                                 ]}</th>
                                     <td class="d-flex flex-column">
                                       <div class="tableTitle">
-                                        <a href="#" class="links">${
-                                          tracks[i].title
-                                        }</a>
+                                        <a onclick="playSong('${encodeURIComponent(
+                                          JSON.stringify(tracks[i])
+                                        )}')" class="links">${
+        tracks[i].title
+      }</a>
                                       </div>
                                       <div class="tableArtist">
                                         <a href="#" class="links">${
@@ -45,6 +65,9 @@ const searchInputValue = async (event) => {
                                     </td>
                                     <td class="text-right pr-5">${minutes}:${seconds}
                                 </tr>`;
+    }
+  } else {
+    alert("No such Artist found");
   }
 };
 // const artistName = data.artist.name;
