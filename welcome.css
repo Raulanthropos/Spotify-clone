@@ -246,6 +246,7 @@ body {
   aspect-ratio: 1/1;
   background-color: rgba(0, 0, 0, 0.577);
 }
+
 .sidecards {
   /* width: 12.5%; */
   background-color: #322827a1;
@@ -309,6 +310,16 @@ a:hover {
   color: grey;
 }
 @media screen and (max-width: 768px) {
+  #cardstart,
+  #firstAlbumRow,
+  #secondAlbumRow,
+  #topsidecards,
+  #mainrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   #first,
   .prev-next-buttons {
     display: none;
