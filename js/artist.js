@@ -1,3 +1,27 @@
+// Searching for params albumId
+const params = new URLSearchParams(window.location.search);
+const artistId = params.get("artistId");
+console.log(artistId);
+
+const playSong = (obj) => {
+  track = JSON.parse(decodeURIComponent(obj));
+  console.log(track);
+  // PlayerInfos
+  const playerSongImage = document.querySelector(".playerSongImage");
+  playerSongImage.src = `${track.album.cover_xl}`;
+  const playerSongTitle = document.querySelector(".playerSongTitle");
+  playerSongTitle.innerText = `${track.title}`;
+  const playerSongArtist = document.querySelector(".playerSongArtist");
+  playerSongArtist.innerText = `${track.artist.name}`;
+  // Duration
+  const timeLeft = document.querySelector(".timeLeft");
+  let minutes = parseInt(track.duration / 60);
+  let modulaSeconds = track.duration % 60;
+  let secondsString = "0" + modulaSeconds;
+  let seconds = secondsString.slice(-2);
+  timeLeft.innerText = `${minutes}:${seconds}`;
+};
+
 const inputField = document.querySelector(".form-control");
 const searchBtn = document.getElementById("search-btn");
 let bandPic = document.querySelectorAll(".band-pic");
@@ -24,7 +48,11 @@ const theTrackList = async (tracklist) => {
     }
     const rank = arrayOfFetchedTrackList[i].rank;
     const duration = minutes + ":" + seconds;
-    trackTitle[i].innerText = arrayOfFetchedTrackList[i].title;
+    trackTitle[
+      i
+    ].innerHTML = `<a class="links" onclick="playSong('${encodeURIComponent(
+      JSON.stringify(arrayOfFetchedTrackList[i])
+    )}')" class="links">${arrayOfFetchedTrackList[i].title}</a>`;
     trackRank[i].innerText = rank.toLocaleString("en-us");
     monthlyListeners.innerText =
       rank.toLocaleString("en-us") + " monthly listeners"; //This function ensures that, if the number has more than 3 digits, every 3 digits will be separated by a comma.
@@ -39,7 +67,6 @@ window.onload = async () => {
   };
 
   const baseUrl = "https://striveschool-api.herokuapp.com/api/deezer/artist/";
-  let artistId = "410";
   const response = await fetch(baseUrl + artistId, options);
   const artist = await response.json();
   const artistName = artist.name;
@@ -53,4 +80,3 @@ window.onload = async () => {
   mainImage.src = artist.picture_xl;
   theTrackList(tracklist);
 };
-

@@ -53,9 +53,11 @@ const searchInputValue = async (event) => {
       }</a>
                                       </div>
                                       <div class="tableArtist">
-                                        <a href="#" class="links">${
-                                          tracks[i].artist.name
-                                        }</a>
+                                        <a href="artist.html?artistId=${
+                                          tracks[i].artist.id
+                                        }" class="links">${
+        tracks[i].artist.name
+      }</a>
                                       </div>
                                     </td>
                                     <td class="tableAlbum pl-5">
