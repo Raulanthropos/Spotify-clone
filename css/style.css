@@ -8,20 +8,51 @@
     color: var(--color-text-primary);
 }
 
-#main-container {
+/* #main-container {
     background: url("https://express-images.franklymedia.com/6616/sites/157/2020/11/09142131/Queen-Adam-Lambert-Live-around-the-world.png") no-repeat;
     background-size: 100%;
+    object-fit: cover;
+    aspect-ratio: 1.3/.8;
+    /* color: var(--color-text-primary); */
+/* } */ */
+
+#main-container {
     width: 100%;
-    height: auto;
-    margin-left: auto;
+    max-height: 30%;
+}
+
+#main-image {
+    width: 80vw;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.lead {
+    font-size: 12px;
+    margin-block: auto;
     color: var(--color-text-primary);
 }
 
+h1 {
+    font-size: 84px;
+    font-weight: 800;
+    letter-spacing: 0.8;
+    color: var(--color-text-primary);
+}
+
+#monthly-listeners {
+    color: var(--color-text-primary);
+}
+
+#text-container {
+    margin-top: -14rem;
+}
+
 #playlist-container {
-    margin-top: -42.5em;
+    margin-top: -38.5em;
     background: linear-gradient(0deg, rgba(19,18,19,1) 0%, rgba(80,81,81,1) 95%, rgba(80,81,81,1) 100%);
     overflow-y: scroll;
-    max-height: 100vh;
+    max-height: 80vh;
 }
 
 #verified-btn {
