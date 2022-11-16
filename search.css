@@ -134,7 +134,7 @@
   width: 2vw;
   min-width: 24px;
   aspect-ratio: 1/1;
-  background-color: rgba(0, 0, 0, 0.577);
+  background-color: rgba(0, 0, 0, 0.396);
 }
 
 /* Search Bar */
@@ -206,6 +206,10 @@
 }
 
 /* Table */
+
+td > div > a {
+  cursor: pointer;
+}
 
 .links {
   text-decoration: none;

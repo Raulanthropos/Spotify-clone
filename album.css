@@ -231,6 +231,19 @@
 
 /* Table */
 
+td > div > a {
+  cursor: pointer;
+}
+.links {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.links:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 .table-borderless > tbody > tr > td,
 .table-borderless > tbody > tr > th,
 .table-borderless > tfoot > tr > td,

@@ -1,10 +1,33 @@
-window.onload = async () => {
+// Searching for params albumId
+const params = new URLSearchParams(window.location.search);
+const albumId = params.get("albumId");
+console.log(albumId);
+
+const playSong = (obj) => {
+  track = JSON.parse(decodeURIComponent(obj));
+  console.log(track);
+  // PlayerInfos
+  const playerSongImage = document.querySelector(".playerSongImage");
+  playerSongImage.src = `${track.album.cover_xl}`;
+  const playerSongTitle = document.querySelector(".playerSongTitle");
+  playerSongTitle.innerText = `${track.title}`;
+  const playerSongArtist = document.querySelector(".playerSongArtist");
+  playerSongArtist.innerText = `${track.artist.name}`;
+  // Duration
+  const timeLeft = document.querySelector(".timeLeft");
+  let minutes = parseInt(track.duration / 60);
+  let modulaSeconds = track.duration % 60;
+  let secondsString = "0" + modulaSeconds;
+  let seconds = secondsString.slice(-2);
+  timeLeft.innerText = `${minutes}:${seconds}`;
+};
+
+async function getAlbum() {
   const options = {
     method: "GET",
   };
 
   const baseUrl = "https://striveschool-api.herokuapp.com/api/deezer/album/";
-  const albumId = "75621062";
   const response = await fetch(baseUrl + albumId, options);
 
   const album = await response.json();
@@ -20,6 +43,7 @@ window.onload = async () => {
   const hours = parseInt((album.duration * 0.016666666666666) / 60);
   const minutes = parseInt((album.duration * 0.016666666666666) % 60);
   const tracks = album.tracks.data;
+  console.log(tracks);
 
   //   Changing properties based on the album ID
 
@@ -30,7 +54,7 @@ window.onload = async () => {
   let albumTitle = document.querySelector(".albumTitle");
   albumTitle.innerText = `${albumName}`;
   let artist = document.querySelector(".artist");
-  artist.innerText = `${artistName}`;
+  artist.innerHTML = `<a href="artist.html?artistId=${album.artist.id}" class="links">${artistName}</a>`;
   let releaseYearDiv = document.querySelector(".releaseYear");
   releaseYearDiv.innerText = `${releaseYear}`;
   let quantityDuration = document.querySelector(".quantityDuration");
@@ -51,12 +75,17 @@ window.onload = async () => {
     trackTable.innerHTML += `<tr>
                         <th class="thMinWidth" scope="row">${[i + 1]}</th>
                             <td class="d-flex flex-column">
-                                <div class="tableTitle">${tracks[i].title}</div>
-                                <div class="tableArtist">${
-                                  tracks[i].artist.name
-                                }</div>
+                                <div class="tableTitle"><a onclick="playSong('${encodeURIComponent(
+                                  JSON.stringify(tracks[i])
+                                )}')" class="links">${tracks[i].title}</a></div>
+                                <div class="tableArtist"><a href="artist.html?artistId=${
+                                  tracks[i].artist.id
+                                }" class="links">${
+      tracks[i].artist.name
+    }</a></div>
                                 </td>
                             <td class="text-right pr-5">${minutes}:${seconds}</td>
                         </tr>`;
   }
-};
+}
+getAlbum();
