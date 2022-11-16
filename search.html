@@ -14,8 +14,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="album.css" />
-    <title>Album</title>
+    <link rel="stylesheet" href="search.css" />
+    <title>Search</title>
   </head>
   <body>
     <div class="containerFluid container-fluid">
@@ -42,11 +42,11 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link d-flex align-items-center" href="./search.html"
+              <a class="nav-link d-flex align-items-center" href="#"
                 ><div
                   class="navIconDivs d-flex justify-content-center align-items-center"
                 >
-                  <i class="bi bi-search"></i>
+                  <i class="bi bi-search-heart"></i>
                 </div>
                 <span class="pl-2 navSpans">Search</span></a
               >
@@ -147,131 +147,121 @@
         </div>
         <!-- Content -->
         <div class="contentDiv col-10">
-          <div class="row arrows justify-content-between">
-            <!-- Arrows -->
-            <div
-              class="col-1 d-flex justify-content-between align-items-start mt-2"
-            >
+          <div class="row-fluid">
+            <div class="row searchBar align-items-center">
+              <!-- Arrows Search Bar -->
               <div
-                class="leftArrow rounded-circle text-white d-flex justify-content-center align-items-center"
+                class="col-6 d-flex justify-content-between align-items-center mt-2"
               >
-                <i class="bi bi-chevron-left fa-3x"></i>
-              </div>
-              <div
-                class="rightArrow rounded-circle text-white d-flex justify-content-center align-items-center"
-              >
-                <i class="bi bi-chevron-right fa-3x align-self-center"></i>
-              </div>
-            </div>
-            <!-- Account Info -->
-            <div class="d-flex">
-              <div class="accountInfo d-flex rounded-pill p-1 mt-2 mr-2">
                 <div
-                  class="profilePhotoDiv d-flex align-item-center justify-content-center rounded-circle mr-1"
+                  class="leftArrow mr-2 rounded-pill text-white d-flex justify-content-center align-items-center"
                 >
-                  <img
-                    src="https://image.shutterstock.com/mosaic_250/2780032/1770074666/stock-photo-head-shot-of-african-self-assured-executive-manager-portrait-successful-staff-member-company-1770074666.jpg"
-                    alt="Profile Foto"
-                    class="profileImg"
+                  <i class="bi bi-chevron-left fa-3x"></i>
+                </div>
+                <div
+                  class="rightArrow mr-4 rounded-circle text-white d-flex justify-content-center align-items-center"
+                >
+                  <i class="bi bi-chevron-right fa-3x"></i>
+                </div>
+                <div class="input-group d-flex justify-content-start">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text searchIconBar"
+                      ><i class="bi bi-search"></i
+                    ></span>
+                  </div>
+                  <input
+                    type="text"
+                    class="form-control searchBarInput"
+                    aria-label="Amount (to the nearest dollar)"
+                    placeholder="What do you want to search?"
                   />
-                </div>
-                <div class="profileName text-white align-self-center pl-1 pr-1">
-                  Alexander Spomer
-                </div>
-                <div
-                  class="profileArrowDown text-white align-self-center pl-1 pr-1 ml-auto mr-xl-1"
-                >
-                  <i class="bi bi-caret-down-fill"></i>
+                  <div class="input-group-append">
+                    <span class="input-group-text xIconBar"
+                      ><i class="bi bi-x-lg"></i
+                    ></span>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <!-- Album Cover + Info -->
-          <div class="row d-flex my-3">
-            <div class="col-2 mt-2 d-flex align-items-end">
-              <img alt="Album Cover" class="albumCover" />
-            </div>
-            <div class="col-10 d-flex align-items-end mt-2 text-white">
-              <div class="d-flex flex-column">
-                <div class="recordType text-uppercase">Album</div>
-                <h2 class="albumTitle">Bohemian</h2>
-                <div class="d-flex">
+              <!-- Account Info -->
+              <div class="col-6 d-flex justify-content-end">
+                <div class="accountInfo d-flex rounded-pill p-1 mt-2 mr-2">
                   <div
-                    class="artistImageDiv rounded-circle d-flex align-item-center justify-content-center"
+                    class="profilePhotoDiv d-flex align-item-center justify-content-center rounded-circle mr-1"
                   >
                     <img
                       src="https://image.shutterstock.com/mosaic_250/2780032/1770074666/stock-photo-head-shot-of-african-self-assured-executive-manager-portrait-successful-staff-member-company-1770074666.jpg"
                       alt="Profile Foto"
-                      class="artistImg"
+                      class="profileImg"
                     />
                   </div>
-                  <div class="albumInfo d-flex align-items-center ml-1">
-                    <div class="artist">
-                      <a href="" class="links">Artist</a>
-                    </div>
-                    <div class="separaterDot"><i class="bi bi-dot"></i></div>
-                    <div class="releaseYear">2022</div>
-                    <div class="separaterDot"><i class="bi bi-dot"></i></div>
-                    <div class="quantityDuration">4 songs, 3 hr 14 min</div>
+                  <div
+                    class="profileName text-white align-self-center pl-1 pr-1"
+                  >
+                    Alexander Spomer
+                  </div>
+                  <div
+                    class="profileArrowDown text-white align-self-center pl-1 pr-1 ml-auto mr-xl-1"
+                  >
+                    <i class="bi bi-caret-down-fill"></i>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Play, Heart, Dots -->
-          <div class="row bgBlackTransparent">
-            <div class="col-12 d-flex align-items-center my-3">
-              <div
-                class="playButton mr-3 rounded-circle text-white d-flex justify-content-center align-items-center"
-              >
-                <i class="bi bi-play-fill"></i>
-              </div>
-              <div class="heart mx-3 text-white">
-                <i class="bi bi-heart"></i>
-              </div>
-              <div class="dots text-white mx-3">
-                <i class="bi bi-three-dots"></i>
+            <div class="row">
+              <div class="col-12 mt-3 d-flex">
+                <div
+                  class="options rounded-pill px-3 py-1 text-white mr-2 d-flex align-self-center justify-content-center activeOption"
+                >
+                  All
+                </div>
+                <div
+                  class="options rounded-pill px-3 py-1 text-white mr-2 d-flex align-self-center justify-content-center"
+                >
+                  Songs
+                </div>
+                <div
+                  class="options rounded-pill px-3 py-1 text-white mr-2 d-flex align-self-center justify-content-center"
+                >
+                  Artists
+                </div>
+                <div
+                  class="options rounded-pill px-3 py-1 text-white mr-2 d-flex align-self-center justify-content-center"
+                >
+                  Playlists
+                </div>
+                <div
+                  class="options rounded-pill px-3 py-1 text-white mr-2 d-flex align-self-center justify-content-center"
+                >
+                  Albums
+                </div>
+                <div
+                  class="options rounded-pill px-3 py-1 text-white mr-2 d-flex align-self-center justify-content-center"
+                >
+                  Podcasts and Shows
+                </div>
+                <div
+                  class="options rounded-pill px-3 py-1 text-white mr-2 d-flex align-self-center justify-content-center"
+                >
+                  Profile
+                </div>
               </div>
             </div>
           </div>
+
           <!-- Table -->
-          <div class="row bgBlackTransparent scrollit pb-0">
+          <div class="row scrollitSearch pb-0">
             <table class="table table-borderless mx-3 mt-3 text-white">
               <thead class="theadBorderBottom">
                 <tr>
                   <th class="thMinWidth" scope="col">#</th>
-                  <th scope="col">Title</th>
+                  <th scope="col">Tracks</th>
+                  <th scope="col" class="pl-5">Album</th>
                   <th scope="col" class="text-right pr-5">
                     <i class="bi bi-clock"></i>
                   </th>
                 </tr>
               </thead>
-              <tbody id="trackTable" class="scrollit">
-                <tr>
-                  <th class="thMinWidth" scope="row">1</th>
-                  <td class="d-flex flex-column">
-                    <div class="tableTitle">20th Century Fox Fanture</div>
-                    <div class="tableArtist">Queen</div>
-                  </td>
-                  <td class="text-right pr-5">0:25</td>
-                </tr>
-                <tr>
-                  <th class="thMinWidth" scope="row">2</th>
-                  <td class="d-flex flex-column">
-                    <div class="tableTitle">Somebody To Love</div>
-                    <div class="tableArtist">Queen</div>
-                  </td>
-                  <td class="text-right pr-5">4:55</td>
-                </tr>
-                <tr>
-                  <th class="thMinWidth" scope="row">3</th>
-                  <td class="d-flex flex-column">
-                    <div class="tableTitle">Doing All Right - Revisited</div>
-                    <div class="tableArtist">Queen</div>
-                  </td>
-                  <td class="text-right pr-5">3:16</td>
-                </tr>
-              </tbody>
+              <tbody id="albumTable" class="scrollit"></tbody>
             </table>
           </div>
         </div>
@@ -318,7 +308,7 @@
             <div
               class="iconPlay mx-2 rounded-circle d-flex justify-content-center align-items-center"
             >
-              <i class="bi bi-play-fill"></i>
+              <a href="" class="links"><i class="bi bi-play-fill"></i></a>
             </div>
             <div
               class="iconNext px-2 d-flex justify-content-center align-items-center"
@@ -367,7 +357,7 @@
         </div>
       </div>
     </div>
-    <script src="album.js"></script>
+    <script src="search.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

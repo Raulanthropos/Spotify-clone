@@ -2,13 +2,7 @@
 
 .contentDiv {
   height: 92vh;
-  background: #dc0a9d;
-  background: linear-gradient(
-    180deg,
-    rgba(185, 8, 110, 1) 0%,
-    rgba(0, 0, 0, 1) 60%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  background: #1f1f1f;
 }
 
 .bgBlackTransparent {
@@ -17,9 +11,9 @@
 
 /* Scrollbar */
 
-.scrollit {
+.scrollitSearch {
   overflow-y: scroll;
-  height: 52vh;
+  height: 80vh;
 }
 
 /* width */
@@ -140,7 +134,28 @@
   width: 2vw;
   min-width: 24px;
   aspect-ratio: 1/1;
-  background-color: rgba(0, 0, 0, 0.577);
+  background-color: rgba(0, 0, 0, 0.396);
+}
+
+/* Search Bar */
+
+.searchIconBar {
+  background-color: white;
+  border: none;
+  border-radius: 50% 0 0 50%;
+  font-weight: bold;
+}
+
+.searchBarInput {
+  border: none;
+  max-width: 15vw;
+}
+
+.xIconBar {
+  background-color: white;
+  border: none;
+  border-radius: 0 50% 50% 0;
+  font-weight: bold;
 }
 
 .accountInfo {
@@ -174,59 +189,20 @@
   font-size: 0.8vh;
 }
 
-/* 2nd Row (Album Cover) */
+/* 2nd Row (Options) */
 
-.albumCover {
-  min-width: 12vw;
-  aspect-ratio: 1/1;
-  box-shadow: 0px 0px 30px 15px rgba(0, 0, 0, 0.56);
-}
-
-.artistImageDiv {
-  width: 2vw;
-  min-width: 24px;
-  aspect-ratio: 1/1;
-  overflow: hidden;
-}
-
-.recordType {
-  font-size: 0.8vh;
-  font-weight: bold;
-}
-
-.albumTitle {
+.options {
+  background-color: rgb(43, 43, 43);
+  font-weight: 400;
+  cursor: pointer;
   white-space: nowrap;
-  overflow: hidden;
+  overflow-x: hidden;
   text-overflow: ellipsis;
-  font-weight: bold;
 }
 
-.artist {
-  font-weight: bolder;
-}
-
-.releaseYear,
-.quantityDuration,
-.separaterDot {
-  color: rgba(211, 211, 211, 0.64);
-}
-
-/* 3rd Row Play, Heart, Dots */
-
-.playButton {
-  background-color: rgb(14, 236, 88);
-  width: 2.5vw;
-  aspect-ratio: 1/1;
-  overflow: hidden;
-  font-size: 2vh;
-}
-
-.heart {
-  font-size: 1.5vh;
-}
-
-.dots {
-  font-size: 1.5vh;
+.activeOption {
+  background-color: white;
+  color: black !important;
 }
 
 /* Table */
@@ -234,10 +210,10 @@
 td > div > a {
   cursor: pointer;
 }
+
 .links {
   text-decoration: none;
   color: inherit;
-  cursor: pointer;
 }
 .links:hover {
   text-decoration: none;
@@ -265,6 +241,11 @@ td > div > a {
 .tableTitle {
   font-weight: bold;
   font-size: 1vh;
+}
+
+.tableAlbum {
+  font-weight: bold;
+  font-size: 1.5vh;
 }
 
 .tableArtist {
