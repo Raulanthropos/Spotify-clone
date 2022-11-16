@@ -1,6 +1,9 @@
 body {
   font-size: x-large;
 }
+.hide {
+  visibility: hidden;
+}
 #first {
   background-color: black;
   padding-left: 2rem;

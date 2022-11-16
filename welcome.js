@@ -62,6 +62,7 @@ window.onload = async () => {
   fillPageAlbums(listOfSearch);
   fillPageSongs(listOfSongs);
   fillPageArtists(listOfArtists);
+  hideLoader();
 };
 // Getting places for cards
 let topsidecards = document.querySelector("#topsidecards");
@@ -119,3 +120,7 @@ const fillPageArtists = function (listOfArtists) {
         </div></a>`;
   }
 };
+function hideLoader() {
+  let loader = document.getElementById("loading");
+  loader.classList.add("hide");
+}
