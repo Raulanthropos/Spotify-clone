@@ -13,16 +13,29 @@ const submitBtn = document.getElementById("log-in");
 const validateInputs = () => {
     const usernameValue = username.value.trim();
     const passwordValue = password.value.trim();
-    if (usernameValue === '' || passwordValue === '') {
-        alert("It seems that you did not fill the fields correctly. Please try again.");
-    } else if (usernameValue === user1 && passwordValue === pass1) {
-        alert(`Welcome home, ${user1}! We're redirecting you to the home page...`)
-    } else if (usernameValue === user2 && passwordValue === pass2) {
-        alert(`Welcome home, ${user2}! We're redirecting you to the home page...`)
-    } else if (usernameValue === user3 && passwordValue === pass3) {
-        alert(`Welcome home, ${user3}! We're redirecting you to the home page...`)
-    } else {
-        alert("Either your username or your password, is wrong. Please try again.")
+
+    // if (usernameValue === '' || passwordValue === '') {
+    //     alert("It seems that you did not fill the fields correctly. Please try again.");
+    // } else if (usernameValue === user1 && passwordValue === pass1) {
+    //     alert(`Welcome home, ${user1}! We're redirecting you to the home page...`)
+    // } else if (usernameValue === user2 && passwordValue === pass2) {
+    //     alert(`Welcome home, ${user2}! We're redirecting you to the home page...`)
+    // } else if (usernameValue === user3 && passwordValue === pass3) {
+    //     alert(`Welcome home, ${user3}! We're redirecting you to the home page...`)
+    // } else {
+    //     alert("Either your username or your password, is wrong. Please try again.")
+    // }
+
+    switch(usernameValue) {
+        case '': alert("It seems that you did not fill the fields. Please try again.");
+        break;
+        case user1: passwordValue === pass1 ? alert(`Welcome home, ${user1}! We're redirecting you to the home page...`) : alert(`Your password is wrong, ${user1}. Please try again`);
+        break;
+        case user2: passwordValue === pass2 ? alert(`Welcome home, ${user2}! We're redirecting you to the home page...`) : alert(`Your password is wrong, ${user2}. Please try again`);
+        break;
+        case user3: passwordValue === pass3 ? alert(`Welcome home, ${user3}! We're redirecting you to the home page...`) : alert(`Your password is wrong, ${user3}. Please try again`);
+        break;
+        default: alert(`Your username is wrong. Please try again`)
     }
 };
 
