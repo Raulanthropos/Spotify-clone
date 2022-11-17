@@ -2,7 +2,12 @@
 const params = new URLSearchParams(window.location.search);
 const artistId = params.get("artistId");
 console.log(artistId);
-
+const createMusic = (track) => {
+  let song = document.querySelector("#music");
+  console.log(track.preview);
+  song.innerHTML += "";
+  song.innerHTML += `<audio id='sound1' src="${track.preview}" preload="auto"></audio>`;
+};
 const playSong = (obj) => {
   track = JSON.parse(decodeURIComponent(obj));
   console.log(track);
@@ -20,6 +25,7 @@ const playSong = (obj) => {
   let secondsString = "0" + modulaSeconds;
   let seconds = secondsString.slice(-2);
   timeLeft.innerText = `${minutes}:${seconds}`;
+  createMusic(track);
 };
 
 const inputField = document.querySelector(".form-control");
@@ -125,4 +131,3 @@ const changeVolume2 = () => {
   volume.innerHTML = "";
   volume.innerHTML += `<i onclick="changeVolume()" class="bi bi-volume-up"></i>`;
 };
-

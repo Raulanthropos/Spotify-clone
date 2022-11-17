@@ -157,10 +157,3 @@ const changeVolume2 = () => {
   volume.innerHTML = "";
   volume.innerHTML += `<i onclick="changeVolume()" class="bi bi-volume-up"></i>`;
 };
-
-let song = document.querySelector("music");
-
-const createMusic = () => {
-  song.innerHTML += "";
-  song.innerHTML += `<audio id='sound1' src="" preload="auto"></audio>`;
-};

@@ -2,6 +2,12 @@
 const params = new URLSearchParams(window.location.search);
 const albumId = params.get("albumId");
 console.log(albumId);
+const createMusic = (track) => {
+  let song = document.querySelector("#music");
+  console.log(track.preview);
+  song.innerHTML += "";
+  song.innerHTML += `<audio id='sound1' src="${track.preview}" preload="auto"></audio>`;
+};
 
 const playSong = (obj) => {
   track = JSON.parse(decodeURIComponent(obj));
@@ -20,6 +26,7 @@ const playSong = (obj) => {
   let secondsString = "0" + modulaSeconds;
   let seconds = secondsString.slice(-2);
   timeLeft.innerText = `${minutes}:${seconds}`;
+  createMusic(track);
 };
 
 async function getAlbum() {

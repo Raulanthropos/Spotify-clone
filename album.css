@@ -321,3 +321,7 @@ td > div > a {
 i {
   cursor: pointer;
 }
+
+#music {
+  display: none;
+}
