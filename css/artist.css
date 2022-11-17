@@ -25,6 +25,10 @@ h2 {
   max-height: 30%;
 }
 
+li:hover {
+  background-color: #191919;
+}
+
 .links:hover {
   text-decoration: none;
   color: inherit;
@@ -41,7 +45,7 @@ h2 {
 }
 
 .lead {
-  font-size: 12px;
+  font-size: 16px;
   margin-block: auto;
   color: var(--color-text-primary);
 }
@@ -133,16 +137,9 @@ h2 {
   padding-inline: 3vw;
 }
 
-/* .album-list-cover {
-  height: 70%;
-  object-fit: cover;
-  margin-block: auto;
-} */
-
 .current-track {
   width: 100px;
   height: 100px;
-  /* object-fit: cover; */
 }
 
 figcaption {

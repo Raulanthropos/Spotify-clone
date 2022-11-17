@@ -91,7 +91,7 @@ async function getAlbum() {
     let seconds = secondsString.slice(-2);
 
     trackTable.innerHTML += `<tr>
-                                <th class="thMinWidth" scope="row">${[
+                                <th class="thMinWidth pt-4" scope="row">${[
                                   i + 1,
                                 ]}</th>
                                     <td class="d-flex flex-column">

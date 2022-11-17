@@ -185,6 +185,11 @@ body {
   box-shadow: 0px 0px 30px 15px rgba(0, 0, 0, 0.56);
 }
 
+.artistFullDiv:hover {
+  background-color: rgba(0, 0, 0, 0.192);
+  border-radius: 50px;
+}
+
 .artistImageDiv {
   width: 2vw;
   min-width: 24px;
@@ -234,7 +239,7 @@ body {
 
 /* Table */
 
-tr:hover {
+tbody tr:hover {
   background-color: #191919;
 }
 
