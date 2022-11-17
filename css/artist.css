@@ -365,3 +365,6 @@ figcaption {
     margin-top: -34.5em;
   }
 }
+i {
+  cursor: pointer;
+}

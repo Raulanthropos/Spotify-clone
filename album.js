@@ -73,14 +73,18 @@ async function getAlbum() {
     let seconds = secondsString.slice(-2);
 
     trackTable.innerHTML += `<tr>
-                        <th class="thMinWidth" scope="row">${[i + 1]}</th>
-                            <td class="d-flex flex-column">
-                                <div class="tableTitle"><a onclick="playSong('${encodeURIComponent(
-                                  JSON.stringify(tracks[i])
-                                )}')" class="links">${tracks[i].title}</a></div>
-                                <div class="tableArtist"><a href="artist.html?artistId=${
-                                  tracks[i].artist.id
-                                }" class="links">${
+                                <th class="thMinWidth" scope="row">${[
+                                  i + 1,
+                                ]}</th>
+                                    <td class="d-flex flex-column">
+                                        <div class="tableTitle"><a onclick="playSong('${encodeURIComponent(
+                                          JSON.stringify(tracks[i])
+                                        )}')" class="links">${
+      tracks[i].title
+    }</a></div>
+                                        <div class="tableArtist"><a href="artist.html?artistId=${
+                                          tracks[i].artist.id
+                                        }" class="links">${
       tracks[i].artist.name
     }</a></div>
                                 </td>
@@ -89,3 +93,60 @@ async function getAlbum() {
   }
 }
 getAlbum();
+
+// Icons changing on click
+
+let buttChange = document.querySelector("#change-button");
+
+const buttonChange = () => {
+  buttChange.innerHTML = "";
+  buttChange.innerHTML += `<i onclick="buttonChange2(), document.getElementById('sound1').pause()" class="bi bi-pause-fill" id="pause-button"></i>`;
+};
+const buttonChange2 = () => {
+  buttChange.innerHTML = "";
+  buttChange.innerHTML += `<i onclick="buttonChange(), document.getElementById('sound1').play()" class="bi bi-play-fill" id="pause-button"></i>`;
+};
+
+let heart = document.querySelector("#change-heart");
+
+const heartChange = () => {
+  heart.innerHTML = "";
+  heart.innerHTML += `<i onclick="heartChange2()" class="bi bi-heart-fill"></i>`;
+};
+const heartChange2 = () => {
+  heart.innerHTML = "";
+  heart.innerHTML += `<i onclick="heartChange()" class="bi bi-heart"></i>`;
+};
+
+let heart2 = document.querySelector("#change-heart2");
+
+const heartChange3 = () => {
+  heart2.innerHTML = "";
+  heart2.innerHTML += `<i onclick="heartChange4()" class="bi bi-heart-fill"></i>`;
+};
+const heartChange4 = () => {
+  heart2.innerHTML = "";
+  heart2.innerHTML += `<i onclick="heartChange3()" class="bi bi-heart"></i>`;
+};
+
+let buttChange2 = document.querySelector("#change-button2");
+
+const buttonChange3 = () => {
+  buttChange2.innerHTML = "";
+  buttChange2.innerHTML += `<i onclick="buttonChange4(),  document.getElementById('sound1').pause()" class="bi bi-pause-fill"></i>`;
+};
+const buttonChange4 = () => {
+  buttChange2.innerHTML = "";
+  buttChange2.innerHTML += `<i onclick="buttonChange3(),  document.getElementById('sound1').play()" class="bi bi-play-fill"></i>`;
+};
+
+let volume = document.querySelector("#change-volume");
+
+const changeVolume = () => {
+  volume.innerHTML = "";
+  volume.innerHTML += `<i onclick="changeVolume2()" class="bi bi-volume-mute"></i>`;
+};
+const changeVolume2 = () => {
+  volume.innerHTML = "";
+  volume.innerHTML += `<i onclick="changeVolume()" class="bi bi-volume-up"></i>`;
+};

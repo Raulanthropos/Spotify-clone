@@ -222,12 +222,16 @@
           <div class="row bgBlackTransparent">
             <div class="col-12 d-flex align-items-center my-3">
               <div
+                id="change-button"
                 class="playButton mr-3 rounded-circle text-white d-flex justify-content-center align-items-center"
               >
-                <i class="bi bi-play-fill"></i>
+                <i
+                  onclick="buttonChange(), document.getElementById(`sound1`).play()"
+                  class="bi bi-play-fill"
+                ></i>
               </div>
-              <div class="heart mx-3 text-white">
-                <i class="bi bi-heart"></i>
+              <div id="change-heart" class="heart mx-3 text-white">
+                <i onclick="heartChange()" class="bi bi-heart"></i>
               </div>
               <div class="dots text-white mx-3">
                 <i class="bi bi-three-dots"></i>
@@ -296,7 +300,9 @@
             <div class="playerSongArtist px-2">Queen</div>
           </div>
           <div class="playerSongIcons d-flex align-items-center">
-            <div class="playerHeart px-3"><i class="bi bi-heart"></i></div>
+            <div id="change-heart2" class="playerHeart px-3">
+              <i onclick="heartChange3()" class="bi bi-heart"></i>
+            </div>
             <div class="playerLaptop"><i class="bi bi-laptop"></i></div>
           </div>
         </div>
@@ -316,9 +322,13 @@
               <i class="bi bi-skip-start-fill"></i>
             </div>
             <div
+              id="change-button2"
               class="iconPlay mx-2 rounded-circle d-flex justify-content-center align-items-center"
             >
-              <i class="bi bi-play-fill"></i>
+              <i
+                onclick="buttonChange3(), document.getElementById(`sound1`).play()"
+                class="bi bi-play-fill"
+              ></i>
             </div>
             <div
               class="iconNext px-2 d-flex justify-content-center align-items-center"
@@ -353,7 +363,9 @@
         <div class="col-3 d-flex justify-content-end align-items-center">
           <div class="listIcon px-2"><i class="bi bi-list"></i></div>
           <div class="computerIcon px-2"><i class="bi bi-pc-display"></i></div>
-          <div class="volumeIcon px-2"><i class="bi bi-volume-up"></i></div>
+          <div id="change-volume" class="volumeIcon px-2">
+            <i onclick="changeVolume()" class="bi bi-volume-up"></i>
+          </div>
           <div class="progress" style="height: 2px">
             <div
               class="progress-bar bg-white"
@@ -367,6 +379,7 @@
         </div>
       </div>
     </div>
+    <audio id="sound1" src="/assets/Bite.mp3" preload="auto"></audio>
     <script src="album.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
