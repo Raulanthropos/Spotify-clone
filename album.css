@@ -1,4 +1,7 @@
 /* Content Div (Backgroundcolors) */
+body {
+  font-size: x-large;
+}
 
 .contentDiv {
   height: 92vh;
@@ -45,7 +48,7 @@
 
 #first {
   background-color: black;
-  font-size: 1vh;
+  font-size: 2vh;
 }
 #logo {
   width: 10vw;
@@ -94,7 +97,7 @@
 .navIconDivs {
   min-width: 2vw;
   aspect-ratio: 1/1;
-  font-size: 1.5vh;
+  font-size: 2vh;
   font-weight: lighter;
 }
 
@@ -103,7 +106,7 @@
   aspect-ratio: 1/1;
   background-color: lightgrey;
   color: black;
-  font-size: 1.5vh;
+  font-size: 2vh;
   font-weight: bolder;
 }
 
@@ -163,7 +166,7 @@
 }
 
 .profileName {
-  font-size: 0.8vh;
+  font-size: 1.5vh;
   font-weight: bolder;
   white-space: nowrap;
   overflow: hidden;
@@ -171,7 +174,7 @@
 }
 
 .profileArrowDown {
-  font-size: 0.8vh;
+  font-size: 1.5vh;
 }
 
 /* 2nd Row (Album Cover) */
@@ -190,7 +193,7 @@
 }
 
 .recordType {
-  font-size: 0.8vh;
+  font-size: 1.5vh;
   font-weight: bold;
 }
 
@@ -231,6 +234,10 @@
 
 /* Table */
 
+tr:hover {
+  background-color: #191919;
+}
+
 td > div > a {
   cursor: pointer;
 }
@@ -264,11 +271,11 @@ td > div > a {
 
 .tableTitle {
   font-weight: bold;
-  font-size: 1vh;
+  font-size: 2vh;
 }
 
 .tableArtist {
-  font-size: 0.8vh;
+  font-size: 1.5vh;
   color: rgba(255, 255, 255, 0.743);
 }
 

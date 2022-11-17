@@ -8,15 +8,16 @@
   color: var(--color-text-primary);
 }
 
-/* #main-container {
-    background: url("https://express-images.franklymedia.com/6616/sites/157/2020/11/09142131/Queen-Adam-Lambert-Live-around-the-world.png") no-repeat;
-    background-size: 100%;
-    object-fit: cover;
-    aspect-ratio: 1.3/.8;
-    /* color: var(--color-text-primary); */
-/* } */
+#playlist-container {
+  height: 51vh;
+}
 body {
   background-color: black;
+  font-size: x-large;
+}
+
+h2 {
+  font-size: larger !important;
 }
 
 #main-container {
@@ -64,11 +65,11 @@ h1 {
   background: linear-gradient(
     180deg,
     rgb(78, 78, 78) 0%,
-    rgb(57, 57, 57) 50%,
+    rgb(0, 0, 0) 70%,
     rgb(0, 0, 0) 100%
   );
   overflow-y: scroll;
-  max-height: 80vh;
+  /* max-height: 80vh; */
 }
 
 #verified-btn {
@@ -125,13 +126,18 @@ h2 {
   border: none;
   cursor: pointer;
   background-color: transparent;
+  margin-bottom: 5vh;
 }
 
-.album-list-cover {
+.band-pic {
+  padding-inline: 3vw;
+}
+
+/* .album-list-cover {
   height: 70%;
   object-fit: cover;
   margin-block: auto;
-}
+} */
 
 .current-track {
   width: 100px;
@@ -140,7 +146,7 @@ h2 {
 }
 
 figcaption {
-  font-size: 12px;
+  font-size: 20px;
   opacity: 0.6;
 }
 
@@ -179,7 +185,7 @@ figcaption {
 
 #first {
   background-color: black;
-  font-size: 1vh;
+  font-size: 2vh;
 }
 #logo {
   width: 10vw;
@@ -202,11 +208,19 @@ figcaption {
   color: white;
 }
 
-#nav-3 {
+#navScroll {
   overflow: hidden;
   overflow-y: scroll;
   text-overflow: ellipsis;
   white-space: nowrap;
+  height: 30vh;
+  list-style: none;
+  padding-left: 0%;
+}
+
+#navScroll a {
+  text-decoration: none;
+  color: white;
 }
 
 .navHomeDiv {
@@ -310,49 +324,3 @@ figcaption {
 .current-track-title {
   /* margin-block: auto; */
 }
-/* 
-@media screen and (max-width: 768px) {
-  #text-container {
-    margin-top: -28rem;
-  }
-
-  .rank {
-    display: none;
-  }
-
-  #artist-pick,
-  #tag-pick {
-    display: none;
-  }
-
-  .track-title {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-
-  #playlist-container {
-    margin-top: -28.5em;
-  }
-}
-@media screen and (max-width: 900px) {
-  #text-container {
-    margin-top: -24rem;
-  }
-
-  #playlist-container {
-    margin-top: -30.5em;
-  }
-}
-@media screen and (max-width: 1700px) {
-  #text-container {
-    margin-top: -20rem;
-  }
-
-  #playlist-container {
-    margin-top: -34.5em;
-  }
-}
-i {
-  cursor: pointer;
-} */
