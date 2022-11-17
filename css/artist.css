@@ -82,13 +82,7 @@ h1 {
   color: blue;
 }
 
-/* #pause-button {
-    /* background: radial-gradient(circle 26px, white, rgba(80,81,81,1)); */
-/* font-size: 48px;
-    color: #1db954;
-} */
 */ .pauseButton {
-  /* background-color: rgb(14, 236, 88); */
   color: white;
   background-color: white;
   width: 2.5vw;
