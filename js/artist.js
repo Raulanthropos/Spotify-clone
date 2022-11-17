@@ -87,11 +87,11 @@ let buttChange = document.querySelector("#change-button");
 
 const buttonChange = () => {
   buttChange.innerHTML = "";
-  buttChange.innerHTML += `<i onclick="buttonChange2()" class="bi bi-pause-circle-fill col-2 mr-4" id="pause-button"></i>`;
+  buttChange.innerHTML += `<i onclick="buttonChange2(), document.getElementById('sound1').pause()" class="bi bi-pause-circle-fill col-2 mr-4" id="pause-button"></i>`;
 };
 const buttonChange2 = () => {
   buttChange.innerHTML = "";
-  buttChange.innerHTML += `<i onclick="buttonChange()" class="bi bi-play-circle-fill col-2 mr-4" id="pause-button"></i>`;
+  buttChange.innerHTML += `<i onclick="buttonChange(), document.getElementById('sound1').play()" class="bi bi-play-circle-fill col-2 mr-4" id="pause-button"></i>`;
 };
 
 let heart = document.querySelector("#change-heart");
@@ -108,11 +108,11 @@ let buttChange2 = document.querySelector("#change-button2");
 
 const buttonChange3 = () => {
   buttChange2.innerHTML = "";
-  buttChange2.innerHTML += `<i onclick="buttonChange4()" class="bi bi-pause-fill"></i>`;
+  buttChange2.innerHTML += `<i onclick="buttonChange4(), document.getElementById('sound1').pause()" class="bi bi-pause-fill"></i>`;
 };
 const buttonChange4 = () => {
   buttChange2.innerHTML = "";
-  buttChange2.innerHTML += `<i onclick="buttonChange3()" class="bi bi-play-fill"></i>`;
+  buttChange2.innerHTML += `<i onclick="buttonChange3(), document.getElementById('sound1').play()" class="bi bi-play-fill"></i>`;
 };
 
 let volume = document.querySelector("#change-volume");
