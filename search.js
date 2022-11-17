@@ -1,3 +1,20 @@
+// Creating music inside player
+const createMusic = (track) => {
+  let songDiv = document.querySelector("#music");
+  let audioOriginal = document.querySelector("audio");
+
+  songDiv.removeChild(audioOriginal);
+
+  console.log(track.preview);
+
+  let audio = document.createElement("audio");
+  audio.setAttribute("id", "sound1");
+  audio.setAttribute("preload", "auto");
+  audio.src = `${track.preview}`;
+
+  songDiv.appendChild(audio);
+};
+
 const playSong = (obj) => {
   track = JSON.parse(decodeURIComponent(obj));
   console.log(track);
@@ -15,6 +32,7 @@ const playSong = (obj) => {
   let secondsString = "0" + modulaSeconds;
   let seconds = secondsString.slice(-2);
   timeLeft.innerText = `${minutes}:${seconds}`;
+  createMusic(track);
 };
 
 const searchInputValue = async (event) => {

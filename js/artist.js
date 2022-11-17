@@ -2,12 +2,24 @@
 const params = new URLSearchParams(window.location.search);
 const artistId = params.get("artistId");
 console.log(artistId);
+
+// Creating music inside player
 const createMusic = (track) => {
-  let song = document.querySelector("#music");
+  let songDiv = document.querySelector("#music");
+  let audioOriginal = document.querySelector("audio");
+
+  songDiv.removeChild(audioOriginal);
+
   console.log(track.preview);
-  song.innerHTML += "";
-  song.innerHTML += `<audio id='sound1' src="${track.preview}" preload="auto"></audio>`;
+
+  let audio = document.createElement("audio");
+  audio.setAttribute("id", "sound1");
+  audio.setAttribute("preload", "auto");
+  audio.src = `${track.preview}`;
+
+  songDiv.appendChild(audio);
 };
+
 const playSong = (obj) => {
   track = JSON.parse(decodeURIComponent(obj));
   console.log(track);
