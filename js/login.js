@@ -8,24 +8,69 @@ const user3 = "Raul";
 const pass1 = "123456";
 const pass2 = "789012";
 const pass3 = "ermahgerd";
+const submitBtn = document.getElementById("log-in");
 
-form.addEventListener('submit', (e) => {
-    if ((userName.value === user1) || (userName.value === user2) || (userName.value === user3)) {
-        switch (userName) {
-            case user1: password.value === pass1 ? alert("redirecting you to the home page...") : alert("Wrong username or password! Please try again.")
-            break;
-            case user2: password.value === pass2 ? alert("redirecting you to the home page...") : alert("Wrong username or password! Please try again.")
-            break;
-            case user3: password.value === pass3 ? alert("redirecting you to the home page...") : alert("Wrong username or password! Please try again.")
-            break;
-            default:     console.log(`Sorry, we are out of.`);
-        }
-        console.log(userName.value, password.value);
+const validateInputs = () => {
+    const usernameValue = username.value.trim();
+    const passwordValue = password.value.trim();
+    if (usernameValue === user1 && passwordValue === pass1) {
+        alert(`Welcome home, ${user1}! We're redirecting you to the home page...`)
+    } else if (usernameValue === user2 && passwordValue === pass2) {
+        alert(`Welcome home, ${user2}! We're redirecting you to the home page...`)
+    } else if (usernameValue === user3 && passwordValue === pass3) {
+        alert(`Welcome home, ${user3}! We're redirecting you to the home page...`)
     } else {
-        console.log(userName.value);
-        // alert("Your Username is not in our database! Would you like to sign up for Spotify?")
+        alert("Either your username or your password, is wrong. Please try again.")
     }
-})
+};
+
+submitBtn.addEventListener('click', validateInputs);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// form.addEventListener('submit', (e) => {
+    // if ((userName.value === user1) || (userName.value === user2) || (userName.value === user3)) {
+    //     switch (userName) {
+    //         case user1: password.value === pass1 ? alert("redirecting you to the home page...") : alert("Wrong username or password! Please try again.")
+    //         break;
+    //         case user2: password.value === pass2 ? alert("redirecting you to the home page...") : alert("Wrong username or password! Please try again.")
+    //         break;
+    //         case user3: password.value === pass3 ? alert("redirecting you to the home page...") : alert("Wrong username or password! Please try again.")
+    //         break;
+    //         default:     console.log(`Sorry, we are out of.`);
+    //     }
+    //     console.log(userName.value, password.value);
+    // } else {
+    //     console.log(userName.value);
+    //     alert("Your Username is not in our database! Would you like to sign up for Spotify?")
+    // }
+//     console.log(userName.value);
+// })
 
 
 
