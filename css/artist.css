@@ -61,12 +61,11 @@ h1 {
 }
 
 #playlist-container {
-  margin-top: -38.5em;
   background: linear-gradient(
-    0deg,
-    rgba(19, 18, 19, 1) 0%,
-    rgba(80, 81, 81, 1) 95%,
-    rgba(80, 81, 81, 1) 100%
+    180deg,
+    rgb(78, 78, 78) 0%,
+    rgb(57, 57, 57) 50%,
+    rgb(0, 0, 0) 100%
   );
   overflow-y: scroll;
   max-height: 80vh;
@@ -128,15 +127,10 @@ h2 {
 }
 
 .list-group-item {
-  background: linear-gradient(
-    0deg,
-    rgba(19, 18, 19, 1) 0%,
-    rgba(80, 81, 81, 1) 80%,
-    rgba(80, 81, 81, 1) 100%
-  );
   color: var(--color-text-primary);
-  border: transparent;
+  border: none;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .album-list-cover {
@@ -319,9 +313,9 @@ figcaption {
 .track-title,
 .duration,
 .current-track-title {
-  margin-block: auto;
+  /* margin-block: auto; */
 }
-
+/* 
 @media screen and (max-width: 768px) {
   #text-container {
     margin-top: -28rem;
@@ -338,7 +332,6 @@ figcaption {
 
   .track-title {
     text-overflow: ellipsis;
-    /* Needed to make it work */
     overflow: hidden;
     white-space: nowrap;
   }
@@ -367,4 +360,4 @@ figcaption {
 }
 i {
   cursor: pointer;
-}
+} */
