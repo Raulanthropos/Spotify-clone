@@ -125,3 +125,4 @@ const changeVolume2 = () => {
   volume.innerHTML = "";
   volume.innerHTML += `<i onclick="changeVolume()" class="bi bi-volume-up"></i>`;
 };
+
