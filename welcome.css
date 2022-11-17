@@ -1,15 +1,21 @@
 body {
-  font-size: x-large;
+  /* font-size: x-large; */
+  background-color: black;
 }
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
 .hide {
-  visibility: hidden;
+  display: none !important;
 }
 #first {
   background-color: black;
   padding-left: 2rem;
-  height: 130vh;
-  overflow: auto;
   min-width: 10rem;
+  height: 70vh;
 }
 #logo {
   width: 10rem;
@@ -49,7 +55,7 @@ body {
   overflow-y: scroll;
   text-overflow: ellipsis;
   white-space: nowrap;
-  height: 30vh;
+  height: 25vh;
   list-style: none;
   margin-left: 0;
   padding-left: 0;
@@ -136,7 +142,6 @@ body {
     #5e0506
   );
   color: white;
-  overflow-y: scroll;
 }
 #podcast-hook {
   color: grey;
@@ -220,9 +225,17 @@ body {
 }
 
 /* Scrollbar */
+
+.scrollit {
+  overflow-y: scroll;
+  height: 85vh;
+  padding-bottom: 5vh;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
+  height: 0;
 }
 
 /* Track */
@@ -254,7 +267,7 @@ body {
   /* width: 12.5%; */
   background-color: #322827a1;
 
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   margin-bottom: 1rem;
   display: flex;
   height: 6rem;
@@ -302,11 +315,11 @@ img.col-11 {
   font-weight: 300;
   padding-bottom: 1em;
 }
-#cardstart {
+/* #cardstart {
   margin-top: 4em;
-}
+} */
 a:link {
-  color: wheat;
+  color: white;
   text-decoration: none;
 }
 a:hover {
@@ -347,12 +360,24 @@ a:hover {
     align-items: flex-end;
   }
   #first {
-    height: 170vh;
+    height: 50vh;
+  }
+  .scrollit {
+    overflow-y: scroll;
+    height: 71vh;
+  }
+  body {
+    background-color: black;
   }
 }
 @media screen and (max-width: 1200px) {
   #first {
-    height: 230vh;
+    height: 60vh;
+  }
+
+  .scrollit {
+    overflow-y: scroll;
+    height: 80vh;
   }
 }
 i {

@@ -73,14 +73,18 @@ async function getAlbum() {
     let seconds = secondsString.slice(-2);
 
     trackTable.innerHTML += `<tr>
-                        <th class="thMinWidth" scope="row">${[i + 1]}</th>
-                            <td class="d-flex flex-column">
-                                <div class="tableTitle"><a onclick="playSong('${encodeURIComponent(
-                                  JSON.stringify(tracks[i])
-                                )}')" class="links">${tracks[i].title}</a></div>
-                                <div class="tableArtist"><a href="artist.html?artistId=${
-                                  tracks[i].artist.id
-                                }" class="links">${
+                                <th class="thMinWidth" scope="row">${[
+                                  i + 1,
+                                ]}</th>
+                                    <td class="d-flex flex-column">
+                                        <div class="tableTitle"><a onclick="playSong('${encodeURIComponent(
+                                          JSON.stringify(tracks[i])
+                                        )}')" class="links">${
+      tracks[i].title
+    }</a></div>
+                                        <div class="tableArtist"><a href="artist.html?artistId=${
+                                          tracks[i].artist.id
+                                        }" class="links">${
       tracks[i].artist.name
     }</a></div>
                                 </td>
