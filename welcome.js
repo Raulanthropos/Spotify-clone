@@ -2,13 +2,9 @@
 async function getAlbums() {
   const options = {
     method: "GET",
-    headers: {
-      "X-RapidAPI-Key": "0804dffc02mshffe59d44538faefp143e0bjsne323b0c03419",
-      "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com",
-    },
   };
   const response = await fetch(
-    `https://striveschool-api.herokuapp.com/api/deezer/search?q=queen`,
+    `https://striveschool-api.herokuapp.com/api/deezer/search?q=bushido`,
     options
   );
 
@@ -19,13 +15,9 @@ async function getAlbums() {
 async function getSongs() {
   const options = {
     method: "GET",
-    headers: {
-      "X-RapidAPI-Key": "0804dffc02mshffe59d44538faefp143e0bjsne323b0c03419",
-      "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com",
-    },
   };
   const response = await fetch(
-    `https://striveschool-api.herokuapp.com/api/deezer/search?q=metallica`,
+    `https://striveschool-api.herokuapp.com/api/deezer/search?q=kool-savas`,
     options
   );
 
@@ -37,10 +29,6 @@ async function getSongs() {
 async function getArtist() {
   const options = {
     method: "GET",
-    headers: {
-      "X-RapidAPI-Key": "0804dffc02mshffe59d44538faefp143e0bjsne323b0c03419",
-      "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com",
-    },
   };
   const response = await fetch(
     `https://striveschool-api.herokuapp.com/api/deezer/search?q=rock`,
@@ -65,23 +53,26 @@ window.onload = async () => {
   hideLoader();
 };
 // Getting places for cards
-let topsidecards = document.querySelector("#topsidecards");
+let cardstart = document.querySelector("#cardstart");
 let firstRow = document.querySelector("#firstAlbumRow");
 let secondRow = document.querySelector("#secondAlbumRow");
 
 // Filling first card rows (horizontal ones)
 // Card row with albums to redirect to album page.
 const fillPageAlbums = function (listOfSearch) {
-  topsidecards.innerHTML = "";
-  for (i = 0; i < 10; i++) {
-    topsidecards.innerHTML += `<a href="albums.html?q=${listOfSearch.data[i].album.id}>"<div class="sidecards col-2">
-<img
-  class="col-4"
-  src="${listOfSearch.data[i].album.cover_medium}"
-  alt=""
-/>
-<p class="col-8 sidetext">${listOfSearch.data[i].album.title}</p>
-</div></a>`;
+  cardstart.innerHTML = `<h1 class="col-12 mb-4">Good Morning</h1>`;
+  for (let i = 0; i < 10; i++) {
+    console.log(listOfSearch.data[i].album.id);
+    cardstart.innerHTML += `<div class="col-3">
+                              <a href="album.html?albumId=${listOfSearch.data[i].album.id}">
+                                <div class="sidecards col-2">
+                                <img
+                                  class="col-4"
+                                  src="${listOfSearch.data[i].album.cover_medium}"
+                                  alt="Album Cover"
+                                />
+                                <p class="col-8 sidetext">${listOfSearch.data[i].album.title}</p></div>
+                                </a></div>`;
   }
 };
 // Filling second card rows - normal card with i < 8 so doesnt create more than that ammount of cards.
@@ -89,26 +80,31 @@ const fillPageAlbums = function (listOfSearch) {
 // Card row with songs
 const fillPageSongs = function (listOfSongs) {
   firstRow.innerHTML = "";
+  console.log("listOfSongs", listOfSongs);
   for (i = 0; i < 8; i++) {
-    firstRow.innerHTML += `<a href="artists.html?q=${listOfSongs.data[i].artist.id}>"<div class="albumCard">
+    firstRow.innerHTML += `<div class="albumCard">
+    <a href="album.html?albumId=${listOfSongs.data[i].album.id}">
         <img
           class="col-11"
           src="${listOfSongs.data[i].album.cover_medium}"
           alt=""
-        />
+        /></a>
         <div class="albumText">
-          <p>${listOfSongs.data[i].artist.name}</p>
-          <p>${listOfSongs.data[i].title}</p>
+        <a href="artist.html?artistId=${listOfSongs.data[i].artist.id}">
+          <p>${listOfSongs.data[i].artist.name}</p></a>
+          <a href="album.html?albumId=${listOfSongs.data[i].album.id}"><p>${listOfSongs.data[i].title}</p></a>
         </div>
-      </div></a>`;
+      </div>`;
   }
 };
 // Filling third card rows
 // Card row with Artists to go to artist page
 const fillPageArtists = function (listOfArtists) {
+  console.log("🚀listOfArtists", listOfArtists);
+
   secondRow.innerHTML = "";
   for (i = 0; i < 8; i++) {
-    secondRow.innerHTML += `<a href="albums.html=q?${listOfArtists.data[i].album.id}>"<div class="albumCard">
+    secondRow.innerHTML += `<a href="artist.html?artistId=${listOfArtists.data[i].artist.id}"><div class="albumCard">
           <img
             class="col-11"
             src="${listOfArtists.data[i].artist.picture}"
