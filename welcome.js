@@ -71,6 +71,10 @@ const fillPageAlbums = function (listOfSearch) {
                                   src="${listOfSearch.data[i].album.cover_medium}"
                                   alt="Album Cover"
                                 />
+                                
+<div class="play">
+<span class="fa fa-play"></span>
+</div>
                                 <p class="col-8 sidetext">${listOfSearch.data[i].album.title}</p></div>
                                 </a></div>`;
   }
@@ -83,12 +87,17 @@ const fillPageSongs = function (listOfSongs) {
   console.log("listOfSongs", listOfSongs);
   for (i = 0; i < 8; i++) {
     firstRow.innerHTML += `<div class="albumCard">
+    <div class="alBum">
     <a href="album.html?albumId=${listOfSongs.data[i].album.id}">
         <img
           class="col-11"
           src="${listOfSongs.data[i].album.cover_medium}"
           alt=""
         /></a>
+        
+<div class="play">
+<span class="fa fa-play"></span>
+</div>
         <div class="albumText">
         <a href="artist.html?artistId=${listOfSongs.data[i].artist.id}">
           <p>${listOfSongs.data[i].artist.name}</p></a>
@@ -105,11 +114,16 @@ const fillPageArtists = function (listOfArtists) {
   secondRow.innerHTML = "";
   for (i = 0; i < 8; i++) {
     secondRow.innerHTML += `<a href="artist.html?artistId=${listOfArtists.data[i].artist.id}"><div class="albumCard">
-          <img
+    <div class="alBum">
+    <img
             class="col-11"
             src="${listOfArtists.data[i].artist.picture}"
             alt=""
           />
+          
+<div class="play">
+<span class="fa fa-play"></span>
+</div>
           <div class="albumText">
             <p>${listOfArtists.data[i].artist.name}</p>
             </div>

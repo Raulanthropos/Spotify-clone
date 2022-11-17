@@ -273,8 +273,11 @@ a:visited {
   height: 6rem;
   align-items: center;
   padding: 0;
-  min-width: 17rem;
+  min-width: 18rem;
   min-height: 10rem;
+}
+.sidecards:hover {
+  background-color: #262626;
 }
 .sidetext {
   margin: 0;
@@ -295,6 +298,9 @@ a:visited {
   padding: 0.2em;
   margin-right: 0.4em;
   min-width: 13rem;
+}
+.albumCard:hover {
+  background-color: #262626;
 }
 img.col-11 {
   padding: 0;
@@ -382,4 +388,33 @@ a:hover {
 }
 i {
   cursor: pointer;
+}
+.alBum .play .fa {
+  right: 1rem;
+  top: 2rem;
+
+  padding: 1rem;
+  background-color: #1db954;
+  border-radius: 100%;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+.alBum:hover .play .fa {
+  opacity: 1;
+  transform: translateY(-40px);
+}
+.sidecards .play .fa {
+  position: absolute;
+  right: 1rem;
+  top: 5rem;
+
+  padding: 1rem;
+  background-color: #1db954;
+  border-radius: 100%;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+.sidecards:hover .play .fa {
+  opacity: 1;
+  transform: translateY(-20px);
 }
