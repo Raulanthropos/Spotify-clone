@@ -342,7 +342,10 @@
                 id="change-button"
                 class="iconPlay mx-2 rounded-circle d-flex justify-content-center align-items-center"
               >
-                <i onclick="buttonChange()" class="bi bi-play-fill"></i>
+                <i
+                  onclick="buttonChange(), document.getElementById(`sound1`).play()"
+                  class="bi bi-play-fill"
+                ></i>
               </div>
               <div
                 class="iconNext px-2 d-flex justify-content-center align-items-center"
@@ -396,6 +399,7 @@
         </div>
       </div>
     </div>
+    <audio id="sound1" src="/assets/Bite.mp3" preload="auto"></audio>
     <script src="welcome.js"></script>
     <script
       src="https://kit.fontawesome.com/23cecef777.js"
