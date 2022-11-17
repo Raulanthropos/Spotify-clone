@@ -80,3 +80,16 @@ window.onload = async () => {
   mainImage.src = artist.picture_xl;
   theTrackList(tracklist);
 };
+
+// Button changing
+
+let buttChange = document.querySelector("#change-button");
+
+const colorChange = () => {
+  buttChange.innerHTML = "";
+  buttChange.innerHTML += `<i onclick="colorChange2()" class="bi bi-pause-circle-fill col-2 mr-4" id="pause-button"></i>`;
+};
+colorChange2 = () => {
+  buttChange.innerHTML = "";
+  buttChange.innerHTML += `<i onclick="colorChange()" class="bi bi-play-circle-fill col-2 mr-4" id="pause-button"></i>`;
+};

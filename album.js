@@ -89,3 +89,14 @@ async function getAlbum() {
   }
 }
 getAlbum();
+
+let buttChange = document.querySelector("#change-button");
+
+const buttonChange = () => {
+  buttChange.innerHTML = "";
+  buttChange.innerHTML += `<i onclick="buttonChange2()" class="bi bi-pause-fill" id="pause-button"></i>`;
+};
+const buttonChange2 = () => {
+  buttChange.innerHTML = "";
+  buttChange.innerHTML += `<i onclick="buttonChange()" class="bi bi-play-fill" id="pause-button"></i>`;
+};
