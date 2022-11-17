@@ -80,3 +80,5 @@ window.onload = async () => {
   mainImage.src = artist.picture_xl;
   theTrackList(tracklist);
 };
+
+

@@ -1,0 +1,199 @@
+@import url(//db.onlinewebfonts.com/c/01173b246d9d9ea808ea75a26b3b61bb?family=Circular+Spotify+Tx+T+Black);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Circular Spotify Tx T Black";
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 25px 0 20px;
+    border-bottom: 1px solid #d9dadc;
+}
+
+header img {
+    max-width: 100%;
+    width: 200px;
+    height: 100%;
+}
+
+.center {
+    padding-bottom: 10px;
+    padding-top: 30px;
+    font-family: "Circular Spotify Tx T Black";
+    font-size: 1rem;
+    text-align: center;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.btns > div {
+    width: 28.125rem;
+    line-height: 3rem;
+    border-radius: 500px;
+    letter-spacing: 2px;
+}
+
+.btn-fb, .btn-apple, .btn-google, .btn-phone {
+    margin-bottom: 10px;
+    font-size: .875rem;
+}
+
+.btn-fb a, .btn-apple a, .btn-google a, .btn-phone a {
+    color: #FFFFE7;
+    
+}
+
+.btn-fb {
+    background-color: #3b5998;
+    color: white;
+}
+
+.btn-apple {
+    background-color: #000000;
+}
+
+.btns > .btn-google, .btns > .btn-phone {
+    border: 2px solid #4b4b4b
+}
+
+.btn-google a, .btn-phone a {
+    color: #616467
+}
+
+.btn-google:hover, .btn-phone:hover {
+    background-color: #616467;
+    transition: .4s;
+}
+
+.btn-google a:hover, .btn-phone a:hover {
+    color: #FFFFFF;
+    transition: .4s;
+}
+
+.btn-fc:hover {
+    background-color: #3A61B3
+}
+
+.btn-apple:hover {
+    background-color: #333333
+}
+
+.line {
+    border-top: 1px solid #d9dadc;
+    text-align: center;
+    line-height: 1px;
+    margin: 15px auto;
+    width: 28.125rem;
+}
+
+strong {
+    font-size: .75rem;
+    padding: 0 20px;
+    text-transform: uppercase;
+    background: #fff;
+    letter-spacing: 1px;
+}
+
+.login {
+    flex-direction: column;
+    width: 28.125rem;
+    display: flex;
+    margin: auto;
+}
+
+label {
+    color: #222326;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+input {
+    padding: 6px 12px;
+    border-radius: 0;
+    border: 1px solid #d9dadc;
+    line-height: 1.5rem;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Helvetica';
+    font-weight: 400;
+}
+
+.forgot-password {
+    width: 28.125rem;
+    margin: 0 auto;
+    padding: 25px 0;
+    text-decoration: underline;
+}
+
+.getIn {
+    display: flex;
+    width: 28.125rem;
+    justify-content: space-between;
+    margin: auto;
+    text-align: center;
+} 
+
+.btn {
+    /* width: 13.125rem; */
+    padding: 10px 50px;
+    border-radius: 500px;
+    border: none;
+    background-color: #1aa34a;
+    font-size: .875rem;
+    line-height: 3rem;
+    
+}
+
+.btn a {
+    color: white;
+}
+
+.remember-user label{
+    text-align: center;
+    line-height: 3rem;
+    cursor: pointer;
+}
+
+.account {
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 3px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+.sub {
+    padding: 16px 14px 5px;
+}
+
+.sub a {
+    border: 2px solid black;
+    border-radius: 500px;
+    letter-spacing: 2px;
+    color: #616467;
+    border-color: #394755;
+    text-transform: uppercase;
+    line-height: 3rem;
+    width: 28.125rem;
+    font-family: 'Helvetica';
+    font-size: 13px;
+    font-weight:bolder;
+}
+
+.sub a:hover {
+    background-color: #616467;
+    color: #FFFFFF;
+    transition: .4s;
+}
