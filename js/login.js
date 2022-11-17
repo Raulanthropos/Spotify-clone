@@ -14,9 +14,8 @@ const validateInputs = () => {
     const usernameValue = username.value.trim();
     const passwordValue = password.value.trim();
     if (usernameValue === '' || passwordValue === '') {
-        alert("It seems that you did not fill the fields correctly. Please try again.")
-    }
-    if (usernameValue === user1 && passwordValue === pass1) {
+        alert("It seems that you did not fill the fields correctly. Please try again.");
+    } else if (usernameValue === user1 && passwordValue === pass1) {
         alert(`Welcome home, ${user1}! We're redirecting you to the home page...`)
     } else if (usernameValue === user2 && passwordValue === pass2) {
         alert(`Welcome home, ${user2}! We're redirecting you to the home page...`)
