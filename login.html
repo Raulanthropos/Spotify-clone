@@ -37,9 +37,11 @@
             </div>        </div>
         <div class="line"><strong>OR</strong></div>
         <!-- Login field -->
+        <div id="error"></div>
+        <form action="\" method="get">
         <div class="login">
-            <input type="text" required placeholder="Email address or username">
-            <input type="password" required placeholder="Password">
+            <input type="text" required autocomplete="username" placeholder="Email address or username" id="username" value="Alex">
+            <input type="password" required minlength="6" maxlength="20" autocomplete="current-password" placeholder="Password" id="password" value="123456">
         </div>
         <div class="getIn">
             <div class="remember-user">
@@ -47,10 +49,11 @@
                 <label for="checkbox">Remember me</label>
     
             </div>
-            <div class="btn">
+            <button class="btn btn-success mt-1" type="submit" id="log-in">
                 <a href="">LOG IN</a>
-            </div>
+            </button>
         </div>
+    </form>
         <div class="forgot-password" style="text-align: center;">
             <a href="">Forgot your password?</a>
         </div>
