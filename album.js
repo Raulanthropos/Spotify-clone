@@ -100,3 +100,14 @@ const buttonChange2 = () => {
   buttChange.innerHTML = "";
   buttChange.innerHTML += `<i onclick="buttonChange()" class="bi bi-play-fill" id="pause-button"></i>`;
 };
+
+let heart = document.querySelector("#change-heart");
+
+const heartChange = () => {
+  heart.innerHTML = "";
+  heart.innerHTML += `<i onclick="heartChange2()" class="bi bi-heart-fill"></i>`;
+};
+const heartChange2 = () => {
+  heart.innerHTML = "";
+  heart.innerHTML += `<i onclick="heartChange()" class="bi bi-heart"></i>`;
+};

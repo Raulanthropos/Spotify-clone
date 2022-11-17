@@ -317,3 +317,7 @@ td > div > a {
   color: black;
   font-size: 1.2vh;
 }
+
+i {
+  cursor: pointer;
+}
