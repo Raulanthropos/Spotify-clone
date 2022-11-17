@@ -116,10 +116,15 @@ const fillPageArtists = function (listOfArtists) {
         </div></a>`;
   }
 };
+
+// Hiding loader
+
 function hideLoader() {
   let loader = document.getElementById("loading");
   loader.classList.add("hide");
 }
+
+// Icons changing on click
 
 let heart = document.querySelector("#change-heart");
 
@@ -156,5 +161,6 @@ const changeVolume2 = () => {
 let song = document.querySelector("music");
 
 const createMusic = () => {
-  song.innerHTML += `<audio id="sound1" src="/assets/Bite.mp3" preload="auto"></audio>`;
+  song.innerHTML += "";
+  song.innerHTML += `<audio id='sound1' src="" preload="auto"></audio>`;
 };

@@ -81,7 +81,7 @@ window.onload = async () => {
   theTrackList(tracklist);
 };
 
-// Button changing
+// Icons changing on click
 
 let buttChange = document.querySelector("#change-button");
 

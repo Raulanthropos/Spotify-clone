@@ -112,6 +112,8 @@ window.onload = () => {
   });
 };
 
+// Icons changing on click
+
 let heart = document.querySelector("#change-heart");
 
 const heartChange = () => {

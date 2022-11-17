@@ -94,6 +94,8 @@ async function getAlbum() {
 }
 getAlbum();
 
+// Icons changing on click
+
 let buttChange = document.querySelector("#change-button");
 
 const buttonChange = () => {
