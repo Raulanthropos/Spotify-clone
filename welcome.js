@@ -63,7 +63,7 @@ const fillPageAlbums = function (listOfSearch) {
   cardstart.innerHTML = `<h1 class="col-12 mb-4">Good Morning</h1>`;
   for (let i = 0; i < 10; i++) {
     console.log(listOfSearch.data[i].album.id);
-    cardstart.innerHTML += `<div class="col-3">
+    cardstart.innerHTML += `<div class="col-6 col-md-6 col-lg-6 col-xl-2">
                               <a href="album.html?albumId=${listOfSearch.data[i].album.id}">
                                 <div class="sidecards col-2">
                                 <img
@@ -116,10 +116,15 @@ const fillPageArtists = function (listOfArtists) {
         </div></a>`;
   }
 };
+
+// Hiding loader
+
 function hideLoader() {
   let loader = document.getElementById("loading");
   loader.classList.add("hide");
 }
+
+// Icons changing on click
 
 let heart = document.querySelector("#change-heart");
 
@@ -135,11 +140,11 @@ let buttChange = document.querySelector("#change-button");
 
 const buttonChange = () => {
   buttChange.innerHTML = "";
-  buttChange.innerHTML += `<i onclick="buttonChange2()" class="bi bi-pause-fill" id="pause-button"></i>`;
+  buttChange.innerHTML += `<i onclick="buttonChange2(), document.getElementById('sound1').pause() " class="bi bi-pause-fill" id="pause-button"></i>`;
 };
 const buttonChange2 = () => {
   buttChange.innerHTML = "";
-  buttChange.innerHTML += `<i onclick="buttonChange()" class="bi bi-play-fill" id="pause-button"></i>`;
+  buttChange.innerHTML += `<i onclick="buttonChange(), document.getElementById('sound1').play()" class="bi bi-play-fill" id="pause-button"></i>`;
 };
 
 let volume = document.querySelector("#change-volume");
@@ -151,4 +156,11 @@ const changeVolume = () => {
 const changeVolume2 = () => {
   volume.innerHTML = "";
   volume.innerHTML += `<i onclick="changeVolume()" class="bi bi-volume-up"></i>`;
+};
+
+let song = document.querySelector("music");
+
+const createMusic = () => {
+  song.innerHTML += "";
+  song.innerHTML += `<audio id='sound1' src="" preload="auto"></audio>`;
 };
