@@ -286,7 +286,9 @@
             <div class="playerSongArtist px-2">Queen</div>
           </div>
           <div class="playerSongIcons d-flex align-items-center">
-            <div class="playerHeart px-3"><i class="bi bi-heart"></i></div>
+            <div id="change-heart" class="playerHeart px-3">
+              <i onclick="heartChange()" class="bi bi-heart"></i>
+            </div>
             <div class="playerLaptop"><i class="bi bi-laptop"></i></div>
           </div>
         </div>
@@ -306,9 +308,10 @@
               <i class="bi bi-skip-start-fill"></i>
             </div>
             <div
+              id="change-button"
               class="iconPlay mx-2 rounded-circle d-flex justify-content-center align-items-center"
             >
-              <a href="" class="links"><i class="bi bi-play-fill"></i></a>
+              <i onclick="buttonChange()" class="bi bi-play-fill"></i>
             </div>
             <div
               class="iconNext px-2 d-flex justify-content-center align-items-center"
@@ -343,7 +346,9 @@
         <div class="col-3 d-flex justify-content-end align-items-center">
           <div class="listIcon px-2"><i class="bi bi-list"></i></div>
           <div class="computerIcon px-2"><i class="bi bi-pc-display"></i></div>
-          <div class="volumeIcon px-2"><i class="bi bi-volume-up"></i></div>
+          <div id="change-volume" class="volumeIcon px-2">
+            <i onclick="changeVolume()" class="bi bi-volume-up"></i>
+          </div>
           <div class="progress" style="height: 2px">
             <div
               class="progress-bar bg-white"

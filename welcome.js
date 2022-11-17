@@ -124,3 +124,35 @@ function hideLoader() {
   let loader = document.getElementById("loading");
   loader.classList.add("hide");
 }
+
+let heart = document.querySelector("#change-heart");
+
+const heartChange = () => {
+  heart.innerHTML = "";
+  heart.innerHTML += `<i onclick="heartChange2()" class="bi bi-heart-fill"></i>`;
+};
+const heartChange2 = () => {
+  heart.innerHTML = "";
+  heart.innerHTML += `<i onclick="heartChange()" class="bi bi-heart"></i>`;
+};
+let buttChange = document.querySelector("#change-button");
+
+const buttonChange = () => {
+  buttChange.innerHTML = "";
+  buttChange.innerHTML += `<i onclick="buttonChange2()" class="bi bi-pause-fill" id="pause-button"></i>`;
+};
+const buttonChange2 = () => {
+  buttChange.innerHTML = "";
+  buttChange.innerHTML += `<i onclick="buttonChange()" class="bi bi-play-fill" id="pause-button"></i>`;
+};
+
+let volume = document.querySelector("#change-volume");
+
+const changeVolume = () => {
+  volume.innerHTML = "";
+  volume.innerHTML += `<i onclick="changeVolume2()" class="bi bi-volume-mute"></i>`;
+};
+const changeVolume2 = () => {
+  volume.innerHTML = "";
+  volume.innerHTML += `<i onclick="changeVolume()" class="bi bi-volume-up"></i>`;
+};

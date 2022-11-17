@@ -85,11 +85,43 @@ window.onload = async () => {
 
 let buttChange = document.querySelector("#change-button");
 
-const colorChange = () => {
+const buttonChange = () => {
   buttChange.innerHTML = "";
-  buttChange.innerHTML += `<i onclick="colorChange2()" class="bi bi-pause-circle-fill col-2 mr-4" id="pause-button"></i>`;
+  buttChange.innerHTML += `<i onclick="buttonChange2()" class="bi bi-pause-circle-fill col-2 mr-4" id="pause-button"></i>`;
 };
-colorChange2 = () => {
+const buttonChange2 = () => {
   buttChange.innerHTML = "";
-  buttChange.innerHTML += `<i onclick="colorChange()" class="bi bi-play-circle-fill col-2 mr-4" id="pause-button"></i>`;
+  buttChange.innerHTML += `<i onclick="buttonChange()" class="bi bi-play-circle-fill col-2 mr-4" id="pause-button"></i>`;
+};
+
+let heart = document.querySelector("#change-heart");
+
+const heartChange = () => {
+  heart.innerHTML = "";
+  heart.innerHTML += `<i onclick="heartChange2()" class="bi bi-heart-fill"></i>`;
+};
+const heartChange2 = () => {
+  heart.innerHTML = "";
+  heart.innerHTML += `<i onclick="heartChange()" class="bi bi-heart"></i>`;
+};
+let buttChange2 = document.querySelector("#change-button2");
+
+const buttonChange3 = () => {
+  buttChange2.innerHTML = "";
+  buttChange2.innerHTML += `<i onclick="buttonChange4()" class="bi bi-pause-fill"></i>`;
+};
+const buttonChange4 = () => {
+  buttChange2.innerHTML = "";
+  buttChange2.innerHTML += `<i onclick="buttonChange3()" class="bi bi-play-fill"></i>`;
+};
+
+let volume = document.querySelector("#change-volume");
+
+const changeVolume = () => {
+  volume.innerHTML = "";
+  volume.innerHTML += `<i onclick="changeVolume2()" class="bi bi-volume-mute"></i>`;
+};
+const changeVolume2 = () => {
+  volume.innerHTML = "";
+  volume.innerHTML += `<i onclick="changeVolume()" class="bi bi-volume-up"></i>`;
 };
