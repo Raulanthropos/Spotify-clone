@@ -131,6 +131,7 @@ h2 {
   cursor: pointer;
   background-color: transparent;
   margin-bottom: 4vh;
+  margin-top: 2px;
 }
 
 .band-pic {
@@ -318,8 +319,6 @@ figcaption {
   color: green !important;
 }
 
-
 i {
   cursor: pointer;
 }
-
