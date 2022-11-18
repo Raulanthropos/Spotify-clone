@@ -1,0 +1,343 @@
+/* Content Div (Backgroundcolors) */
+body {
+  font-size: x-large;
+}
+
+.contentDiv {
+  height: 92vh;
+  background: #dc0a9d;
+  background: linear-gradient(
+    180deg,
+    rgba(185, 8, 110, 1) 0%,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
+
+.bgBlackTransparent {
+  background-color: rgba(0, 0, 0, 0.38);
+}
+
+/* Scrollbar */
+
+.scrollit {
+  overflow-y: scroll;
+  height: 52vh;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #262626;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* Navbar */
+
+#first {
+  background-color: black;
+  font-size: 2vh;
+}
+#logo {
+  width: 10vw;
+}
+#nav-1 .nav-link,
+#nav-2 .nav-link,
+#nav-4 .nav-link {
+  color: white;
+}
+#nav-3 .nav-link {
+  color: grey;
+}
+#nav-3 .nav-link:hover {
+  color: white;
+  background-color: rgba(128, 128, 128, 0.206);
+}
+#nav-1 .nav-link:hover,
+#nav-2 .nav-link:hover {
+  background-color: rgba(128, 128, 128, 0.206);
+  color: white;
+}
+
+.navActions {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.navScroll {
+  overflow: hidden;
+  overflow-y: scroll;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 30vh;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.navHomeDiv {
+  width: 2vw;
+  aspect-ratio: 1/1;
+  font-size: 2vh;
+  font-weight: lighter;
+}
+.navIconDivs {
+  min-width: 2vw;
+  aspect-ratio: 1/1;
+  font-size: 2vh;
+  font-weight: lighter;
+}
+
+.creatPlaylistDiv {
+  min-width: 2vw;
+  aspect-ratio: 1/1;
+  background-color: lightgrey;
+  color: black;
+  font-size: 2vh;
+  font-weight: bolder;
+}
+
+.navSpans {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.navHeartDiv {
+  background: rgb(38, 8, 185);
+  background: linear-gradient(
+    133deg,
+    rgba(38, 8, 185, 1) 0%,
+    rgba(121, 90, 142, 1) 60%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  min-width: 2vw;
+  aspect-ratio: 1/1;
+  color: white;
+  font-size: 1vh;
+  font-weight: bolder;
+}
+
+/* 1st Row (Arrows) */
+
+.leftArrow {
+  width: 2vw;
+  min-width: 24px;
+  aspect-ratio: 1/1;
+  background-color: black;
+}
+.rightArrow {
+  width: 2vw;
+  min-width: 24px;
+  aspect-ratio: 1/1;
+  background-color: rgba(0, 0, 0, 0.577);
+}
+
+.accountInfo {
+  width: 10vw;
+  background-color: black;
+}
+
+.profilePhotoDiv {
+  width: 2vw;
+  min-width: 24px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+.profileImg,
+.artistImg {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profileName {
+  font-size: 1.5vh;
+  font-weight: bolder;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.profileArrowDown {
+  font-size: 1.5vh;
+}
+
+/* 2nd Row (Album Cover) */
+
+.albumCover {
+  min-width: 12vw;
+  aspect-ratio: 1/1;
+  box-shadow: 0px 0px 30px 15px rgba(0, 0, 0, 0.56);
+}
+
+.artistFullDiv:hover {
+  background-color: rgba(0, 0, 0, 0.192);
+  border-radius: 50px;
+}
+
+.artistImageDiv {
+  width: 2vw;
+  min-width: 24px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+.recordType {
+  font-size: 1.5vh;
+  font-weight: bold;
+}
+
+.albumTitle {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}
+
+.artist {
+  font-weight: bolder;
+}
+
+.releaseYear,
+.quantityDuration,
+.separaterDot {
+  color: rgba(211, 211, 211, 0.64);
+}
+
+/* 3rd Row Play, Heart, Dots */
+
+.playButton {
+  background-color: rgb(14, 236, 88);
+  width: 2.5vw;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  font-size: 2vh;
+}
+
+.heart {
+  font-size: 1.5vh;
+}
+
+.dots {
+  font-size: 1.5vh;
+}
+
+/* Table */
+
+tbody tr:hover {
+  background-color: #191919;
+}
+
+td > div > a {
+  cursor: pointer;
+}
+.links {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.links:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.targetedTrack {
+  color: green !important;
+}
+
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > td,
+.table-borderless > tfoot > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+  border: none;
+  font-weight: 100;
+}
+
+.thMinWidth {
+  width: 1%;
+}
+
+.theadBorderBottom {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.235);
+}
+
+.tableTitle {
+  font-weight: bold;
+  font-size: 2vh;
+}
+
+.tableArtist {
+  font-size: 1.5vh;
+  color: rgba(255, 255, 255, 0.743);
+}
+
+/* Music Player Bottom */
+
+.musicPlayer {
+  min-height: 101px;
+  flex-grow: 0;
+  width: auto;
+  background-color: rgb(30, 30, 30);
+  color: white;
+}
+
+.playerSongImageDiv {
+  min-width: 71px;
+  max-height: 71px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+.playerSongImage {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.playerSongTitle {
+  font-size: 0.9vh;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.playerSongArtist {
+  font-size: 0.8vh;
+}
+
+.iconsDivPlayer {
+  font-size: 1vh;
+}
+
+.iconPlay {
+  height: 2vh;
+  aspect-ratio: 1/1;
+  background-color: white;
+  color: black;
+  font-size: 1.2vh;
+}
+
+i {
+  cursor: pointer;
+}
+
+#music {
+  display: none;
+}

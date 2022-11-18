@@ -1,0 +1,326 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+
+:root {
+  --color-text-primary: white;
+}
+
+#main-container > div > div {
+  color: var(--color-text-primary);
+}
+
+#playlist-container {
+  height: 51vh;
+}
+body {
+  background-color: black;
+  font-size: x-large;
+}
+
+h2 {
+  font-size: larger !important;
+}
+
+#main-container {
+  width: 100%;
+  max-height: 30%;
+}
+
+li:hover {
+  background-color: #191919;
+}
+
+.links:hover {
+  text-decoration: none;
+  color: inherit;
+}
+.links {
+  text-decoration: none;
+  color: inherit;
+}
+
+#main-image {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+.lead {
+  font-size: 16px;
+  margin-block: auto;
+  color: var(--color-text-primary);
+}
+
+h1 {
+  font-size: 84px;
+  font-weight: 800;
+  letter-spacing: 0.8;
+  color: var(--color-text-primary);
+}
+
+#monthly-listeners {
+  color: var(--color-text-primary);
+}
+
+#text-container {
+  margin-top: -14rem;
+}
+
+#playlist-container {
+  background: linear-gradient(
+    180deg,
+    rgb(78, 78, 78) 0%,
+    rgb(0, 0, 0) 70%,
+    rgb(0, 0, 0) 100%
+  );
+  overflow-y: scroll;
+  /* max-height: 80vh; */
+}
+
+#verified-btn {
+  background-position: center center;
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+  text-align: center;
+  margin-block: auto;
+  margin: 0;
+  color: blue;
+}
+
+*/ .pauseButton {
+  color: white;
+  background-color: white;
+  width: 2.5vw;
+  overflow: hidden;
+  font-size: 2vh;
+}
+
+#pause-button {
+  font-size: 56px;
+  color: #1db954;
+}
+#following {
+  margin-top: 1.5rem;
+}
+#follow {
+  color: var(--color-text-primary);
+  padding: 3px 15px;
+  border-radius: 10%;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#dots {
+  color: var(--color-text-primary);
+  margin-left: 10px;
+}
+
+#pause-button,
+#follow,
+#dots,
+#see-more {
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 20px;
+  color: var(--color-text-primary);
+}
+
+.list-group-item {
+  color: var(--color-text-primary);
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  margin-bottom: 4vh;
+  margin-top: 2px;
+}
+
+.band-pic {
+  padding-inline: 3vw;
+}
+
+.current-track {
+  width: 100px;
+  height: 100px;
+}
+
+figcaption {
+  font-size: 20px;
+  opacity: 0.6;
+}
+
+#playlist-current-track {
+  color: var(--color-text-primary);
+  list-style-type: none;
+}
+
+#see-more {
+  color: var(--color-text-primary);
+  list-style-type: none;
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #262626;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* Navbar */
+
+#first {
+  background-color: black;
+  font-size: 2vh;
+}
+#logo {
+  width: 10vw;
+}
+#nav-1 .nav-link,
+#nav-2 .nav-link,
+#nav-4 .nav-link {
+  color: white;
+}
+#nav-3 .nav-link {
+  color: grey;
+}
+#nav-3 .nav-link:hover {
+  color: white;
+  background-color: rgba(128, 128, 128, 0.206);
+}
+#nav-1 .nav-link:hover,
+#nav-2 .nav-link:hover {
+  background-color: rgba(128, 128, 128, 0.206);
+  color: white;
+}
+
+#navScroll {
+  overflow: hidden;
+  overflow-y: scroll;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 30vh;
+  list-style: none;
+  padding-left: 0%;
+}
+
+#navScroll a {
+  text-decoration: none;
+  color: white;
+}
+
+.navHomeDiv {
+  width: 2vw;
+  aspect-ratio: 1/1;
+  font-size: 2vh;
+  font-weight: lighter;
+}
+.navIconDivs {
+  min-width: 2vw;
+  aspect-ratio: 1/1;
+  font-size: 1.5vh;
+  font-weight: lighter;
+}
+
+.creatPlaylistDiv {
+  min-width: 2vw;
+  aspect-ratio: 1/1;
+  background-color: lightgrey;
+  color: black;
+  font-size: 1.5vh;
+  font-weight: bolder;
+}
+
+.navSpans {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.navHeartDiv {
+  background: rgb(38, 8, 185);
+  background: linear-gradient(
+    133deg,
+    rgba(38, 8, 185, 1) 0%,
+    rgba(121, 90, 142, 1) 60%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  min-width: 2vw;
+  aspect-ratio: 1/1;
+  color: white;
+  font-size: 1vh;
+  font-weight: bolder;
+}
+
+/* Music Player Bottom */
+
+.musicPlayer {
+  min-height: 101px;
+  flex-grow: 0;
+  width: auto;
+  background-color: rgb(30, 30, 30);
+  color: white;
+}
+
+.playerSongImageDiv {
+  min-width: 71px;
+  max-height: 71px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+.playerSongImage {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.playerSongTitle {
+  font-size: 0.9vh;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.playerSongArtist {
+  font-size: 0.8vh;
+}
+
+.iconsDivPlayer {
+  font-size: 1vh;
+}
+
+.iconPlay {
+  height: 2vh;
+  aspect-ratio: 1/1;
+  background-color: white;
+  color: black;
+  font-size: 1.2vh;
+}
+
+.play-song {
+  max-height: 10.5vh;
+  padding-top: 0;
+}
+
+.targetedTrack {
+  color: green !important;
+}
+
+i {
+  cursor: pointer;
+}
