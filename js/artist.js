@@ -77,7 +77,9 @@ const theTrackList = async (tracklist) => {
   const newFetch = await fetch(tracklist);
   const fetchedTrackList = await newFetch.json();
   arrayOfFetchedTrackList = fetchedTrackList.data;
+  let artistImages = document.querySelectorAll(".band-pic");
   for (let i = 0; i < arrayOfFetchedTrackList.length; i++) {
+    artistImages[i].src = `${arrayOfFetchedTrackList[i].album.cover_xl}`;
     const minutes = parseInt(arrayOfFetchedTrackList[i].duration / 60);
     let seconds = parseInt(arrayOfFetchedTrackList[i].duration % 60);
     if (seconds < 10) {
@@ -110,9 +112,9 @@ window.onload = async () => {
   const artistName = artist.name;
   const artistPicture = artist.picture_small;
   const tracklist = artist.tracklist;
-  for (bpic of bandPic) {
-    bpic.src = artistPicture;
-  }
+  // for (bpic of bandPic) {
+  //   bpic.src = artistPicture;
+  // }
   currentTrack.src = artistPicture;
   headerInput.innerText = artistName;
   mainImage.src = artist.picture_xl;

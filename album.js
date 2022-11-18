@@ -16,6 +16,15 @@ function deleteTargetedElementsClass(targetedElements) {
       elementBi.classList.add("d-none");
     }
   }
+  // Targetting Tracknumber to add padding top
+  let trackNumberNoPadding = document.querySelectorAll(
+    "th.thMinWidth.text-center:not(.pt-4)"
+  );
+  if (trackNumberNoPadding.length > 0) {
+    for (const elementTh of trackNumberNoPadding) {
+      elementTh.classList.add("pt-4");
+    }
+  }
 }
 
 // Creating music inside player
@@ -59,6 +68,10 @@ const playSong = (obj, event) => {
   );
   event.target.parentElement.parentElement.parentElement.firstElementChild.firstElementChild.classList.add(
     "d-flex"
+  );
+  // Targetting Tracknumber to remove padding top
+  event.target.parentElement.parentElement.parentElement.firstElementChild.classList.remove(
+    "pt-4"
   );
 
   track = JSON.parse(decodeURIComponent(obj));
@@ -131,7 +144,7 @@ async function getAlbum() {
     let seconds = secondsString.slice(-2);
 
     trackTable.innerHTML += `<tr>
-                                <th class="thMinWidth text-center" scope="row">${[
+                                <th class="thMinWidth pt-4 text-center" scope="row">${[
                                   i + 1,
                                 ]} <i class="bi bi-bar-chart-fill d-none"></i></th>
                                     <td class="d-flex flex-column">
@@ -146,7 +159,7 @@ async function getAlbum() {
       tracks[i].artist.name
     }</a></div>
                                 </td>
-                            <td class="text-right pr-5">${minutes}:${seconds}</td>
+                            <td class="text-right pt-4 pr-5">${minutes}:${seconds}</td>
                         </tr>`;
   }
 }

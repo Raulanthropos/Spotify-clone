@@ -13,6 +13,15 @@ function deleteTargetedElementsClass(targetedElements) {
       elementBi.classList.add("d-none");
     }
   }
+  // Targetting Tracknumber to add padding top
+  let trackNumberNoPadding = document.querySelectorAll(
+    "th.thMinWidth.text-center:not(.pt-4)"
+  );
+  if (trackNumberNoPadding.length > 0) {
+    for (const elementTh of trackNumberNoPadding) {
+      elementTh.classList.add("pt-4");
+    }
+  }
 }
 // Creating music inside player
 const createMusic = (track) => {
@@ -53,6 +62,11 @@ const playSong = (obj, event) => {
   );
   event.target.parentElement.parentElement.parentElement.firstElementChild.firstElementChild.classList.add(
     "d-flex"
+  );
+
+  // Targetting Tracknumber to remove padding top
+  event.target.parentElement.parentElement.parentElement.firstElementChild.classList.remove(
+    "pt-4"
   );
 
   track = JSON.parse(decodeURIComponent(obj));
@@ -98,7 +112,7 @@ const searchInputValue = async (event) => {
       let seconds = secondsString.slice(-2);
 
       albumTable.innerHTML += `<tr>
-                                <th class="thMinWidth text-center" scope="row">${[
+                                <th class="thMinWidth pt-4 text-center" scope="row">${[
                                   i + 1,
                                 ]} <i class="bi bi-bar-chart-fill d-none"></i></th>
                                     <td class="d-flex flex-column">
@@ -117,14 +131,14 @@ const searchInputValue = async (event) => {
       }</a>
                                       </div>
                                     </td>
-                                    <td class="tableAlbum pl-5">
+                                    <td class="tableAlbum pt-4 pl-5">
                                       <a href="album.html?albumId=${
                                         tracks[i].album.id
                                       }" class="links">${
         tracks[i].album.title
       }</a>
                                     </td>
-                                    <td class="text-right pr-5">${minutes}:${seconds}
+                                    <td class="text-right pt-4 pr-5">${minutes}:${seconds}
                                 </tr>`;
     }
   } else {
