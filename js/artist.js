@@ -165,3 +165,28 @@ const changeVolume2 = () => {
   volume.innerHTML = "";
   volume.innerHTML += `<i onclick="changeVolume(), document.getElementById('sound1').volume=0" class="bi bi-volume-up"></i>`;
 };
+
+let follow = document.querySelector("#following");
+
+const addColor = () => {
+  follow.innerHTML = "";
+  follow.innerHTML += `<p
+  class="d-inline border mr-4 bg-success"
+  style="margin-block: auto"
+  id="follow"
+  onclick="removeColor()"
+>
+  Follow
+</p>`;
+};
+const removeColor = () => {
+  follow.innerHTML = "";
+  follow.innerHTML += `<p
+  class="d-inline border mr-4"
+  style="margin-block: auto"
+  id="follow"
+  onclick="addColor()"
+>
+  Follow
+</p>`;
+};

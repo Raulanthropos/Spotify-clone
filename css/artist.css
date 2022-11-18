@@ -99,7 +99,9 @@ h1 {
   font-size: 56px;
   color: #1db954;
 }
-
+#following {
+  margin-top: 1.5rem;
+}
 #follow {
   color: var(--color-text-primary);
   padding: 3px 15px;
@@ -318,8 +320,6 @@ figcaption {
   color: green !important;
 }
 
-
 i {
   cursor: pointer;
 }
-
