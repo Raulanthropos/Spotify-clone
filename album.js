@@ -18,10 +18,21 @@ const createMusic = (track) => {
   audio.src = `${track.preview}`;
 
   songDiv.appendChild(audio);
+  document.getElementById("sound1").play();
 };
 
 const playSong = (obj, event) => {
-  event.target.parentElement.parentElement.parentElement.parentElement.classList.add(
+  document.getElementById("sound1").pause();
+  let targetedElements = document.getElementsByClassName("targetedTrack");
+
+  for (const element of targetedElements) {
+    element.classList.remove("targetedTrack");
+  }
+
+  event.target.parentElement.parentElement.parentElement.classList.add(
+    "targetedTrack"
+  );
+  event.target.parentElement.parentElement.firstElementChild.nextElementSibling.classList.add(
     "targetedTrack"
   );
   track = JSON.parse(decodeURIComponent(obj));
