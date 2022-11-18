@@ -20,7 +20,10 @@ const createMusic = (track) => {
   songDiv.appendChild(audio);
 };
 
-const playSong = (obj) => {
+const playSong = (obj, event) => {
+  event.target.parentElement.parentElement.parentElement.parentElement.classList.add(
+    "targetedTrack"
+  );
   track = JSON.parse(decodeURIComponent(obj));
   console.log(track);
   // PlayerInfos
@@ -91,13 +94,13 @@ async function getAlbum() {
     let seconds = secondsString.slice(-2);
 
     trackTable.innerHTML += `<tr>
-                                <th class="thMinWidth" scope="row">${[
+                                <th class="thMinWidth pt-4" scope="row">${[
                                   i + 1,
                                 ]}</th>
                                     <td class="d-flex flex-column">
                                         <div class="tableTitle"><a onclick="playSong('${encodeURIComponent(
                                           JSON.stringify(tracks[i])
-                                        )}')" class="links">${
+                                        )}', event)" class="links">${
       tracks[i].title
     }</a></div>
                                         <div class="tableArtist"><a href="artist.html?artistId=${

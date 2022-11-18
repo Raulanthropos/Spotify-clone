@@ -1,8 +1,10 @@
-/* Content Div (Backgroundcolors) */
+body {
+  font-size: x-large;
+}
 
 .contentDiv {
   height: 92vh;
-  background: #1f1f1f;
+  background: #202020;
 }
 
 .bgBlackTransparent {
@@ -39,7 +41,7 @@
 
 #first {
   background-color: black;
-  font-size: 1vh;
+  font-size: 2vh;
 }
 #logo {
   width: 10vw;
@@ -178,7 +180,7 @@
 }
 
 .profileName {
-  font-size: 0.8vh;
+  font-size: 1.5vh;
   font-weight: bolder;
   white-space: nowrap;
   overflow: hidden;
@@ -186,13 +188,21 @@
 }
 
 .profileArrowDown {
-  font-size: 0.8vh;
+  font-size: 1.5vh;
 }
 
 /* 2nd Row (Options) */
 
 .options {
   background-color: rgb(43, 43, 43);
+  font-weight: 400;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+.options:hover {
+  background-color: rgb(67, 67, 67);
   font-weight: 400;
   cursor: pointer;
   white-space: nowrap;
@@ -209,6 +219,10 @@
 
 td > div > a {
   cursor: pointer;
+}
+
+tr:hover {
+  background-color: #353535;
 }
 
 .links {
@@ -240,16 +254,16 @@ td > div > a {
 
 .tableTitle {
   font-weight: bold;
-  font-size: 1vh;
+  font-size: 2vh;
 }
 
 .tableAlbum {
   font-weight: bold;
-  font-size: 1.5vh;
+  font-size: 2vh;
 }
 
 .tableArtist {
-  font-size: 0.8vh;
+  font-size: 1.5vh;
   color: rgba(255, 255, 255, 0.743);
 }
 
