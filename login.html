@@ -16,7 +16,7 @@
 <body>
     <header>
         <div id="logo">
-            <a href="https://accounts.spotify.com/pt-BR">
+            <a href="">
                 <img src="./assets/spotify-logo.svg" alt="spotify-logo">
             </a>
         </div>
@@ -28,19 +28,19 @@
 
         <div class="btns">
             <div class="btn-fb">
-                <img src="./assets/fb-logo.svg" width="16px" height="16px" style="color: white;" class="mr-3" alt="facebook">
+                <img src="./assets/fb-logo.svg" width="20px" height="20px" class="mr-3" alt="facebook">
                 <a href="">CONTINUE WITH FACEBOOK</a>
             </div>
             <div class="btn-apple">
-                <img src="./assets/apple-logo.svg" width="16px" height="16px" class="mr-3" alt="apple">
+                <img src="./assets/apple-logo.svg" width="20px" height="20px" class="mr-3" alt="apple">
                 <a href="">CONTINUE WITH APPLE</a>
             </div>        </div>
         <div class="line"><strong>OR</strong></div>
         <!-- Login field -->
         <div id="error"></div>
-        <form action="./welcome.html" method="get">
+        <form action="./welcome.html" + getUserName() method="get">
         <div class="login">
-            <input type="text" autocomplete="username" placeholder="Email address or username" id="username" value="Damian">
+            <input type="text" autocomplete="username" placeholder="Email address or username" id="username">
             <input type="password" minlength="1" autocomplete="current-password" placeholder="Password" id="password">
         </div>
         <div class="getIn">
