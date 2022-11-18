@@ -2,7 +2,12 @@
 const params = new URLSearchParams(window.location.search);
 const albumId = params.get("albumId");
 console.log(albumId);
-
+// Deleting Green painting from targeted Track
+function deleteTargetedElementsClass(targetedElements) {
+  for (const element of targetedElements) {
+    element.classList.remove("targetedTrack");
+  }
+}
 // Creating music inside player
 const createMusic = (track) => {
   let songDiv = document.querySelector("#music");
@@ -19,15 +24,17 @@ const createMusic = (track) => {
 
   songDiv.appendChild(audio);
   document.getElementById("sound1").play();
+  buttonChange3();
+  buttonChange();
 };
 
 const playSong = (obj, event) => {
   document.getElementById("sound1").pause();
-  let targetedElements = document.getElementsByClassName("targetedTrack");
+  buttonChange4();
+  buttonChange2();
+  let targetedElements = document.querySelectorAll(".targetedTrack");
 
-  for (const element of targetedElements) {
-    element.classList.remove("targetedTrack");
-  }
+  deleteTargetedElementsClass(targetedElements);
 
   event.target.parentElement.parentElement.parentElement.classList.add(
     "targetedTrack"
@@ -166,10 +173,12 @@ let buttChange2 = document.querySelector("#change-button2");
 const buttonChange3 = () => {
   buttChange2.innerHTML = "";
   buttChange2.innerHTML += `<i onclick="buttonChange4(),  document.getElementById('sound1').pause()" class="bi bi-pause-fill"></i>`;
+  buttonChange();
 };
 const buttonChange4 = () => {
   buttChange2.innerHTML = "";
   buttChange2.innerHTML += `<i onclick="buttonChange3(),  document.getElementById('sound1').play()" class="bi bi-play-fill"></i>`;
+  buttonChange2();
 };
 
 let volume = document.querySelector("#change-volume");

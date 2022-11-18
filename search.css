@@ -234,6 +234,10 @@ tr:hover {
   color: inherit;
 }
 
+.targetedTrack {
+  color: green !important;
+}
+
 .table-borderless > tbody > tr > td,
 .table-borderless > tbody > tr > th,
 .table-borderless > tfoot > tr > td,

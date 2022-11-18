@@ -1,3 +1,9 @@
+// Deleting Green painting from targeted Track
+function deleteTargetedElementsClass(targetedElements) {
+  for (const element of targetedElements) {
+    element.classList.remove("targetedTrack");
+  }
+}
 // Creating music inside player
 const createMusic = (track) => {
   let songDiv = document.querySelector("#music");
@@ -13,9 +19,23 @@ const createMusic = (track) => {
   audio.src = `${track.preview}`;
 
   songDiv.appendChild(audio);
+  document.getElementById("sound1").play();
+  buttonChange();
 };
 
-const playSong = (obj) => {
+const playSong = (obj, event) => {
+  document.getElementById("sound1").pause();
+  buttonChange2();
+  let targetedElements = document.querySelectorAll(".targetedTrack");
+
+  deleteTargetedElementsClass(targetedElements);
+
+  event.target.parentElement.parentElement.parentElement.classList.add(
+    "targetedTrack"
+  );
+  event.target.parentElement.parentElement.firstElementChild.nextElementSibling.classList.add(
+    "targetedTrack"
+  );
   track = JSON.parse(decodeURIComponent(obj));
   console.log(track);
   // PlayerInfos
@@ -66,7 +86,7 @@ const searchInputValue = async (event) => {
                                       <div class="tableTitle">
                                         <a onclick="playSong('${encodeURIComponent(
                                           JSON.stringify(tracks[i])
-                                        )}')" class="links">${
+                                        )}', event)" class="links">${
         tracks[i].title
       }</a>
                                       </div>
