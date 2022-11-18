@@ -3,6 +3,16 @@ function deleteTargetedElementsClass(targetedElements) {
   for (const element of targetedElements) {
     element.classList.remove("targetedTrack");
   }
+
+  // Display None Sound Icon
+  let soundIconBi = document.querySelectorAll("i.bi.bi-bar-chart-fill.d-flex");
+  console.log("soundIconBi", soundIconBi);
+  if (soundIconBi.length > 0) {
+    for (const elementBi of soundIconBi) {
+      elementBi.classList.remove("d-flex");
+      elementBi.classList.add("d-none");
+    }
+  }
 }
 // Creating music inside player
 const createMusic = (track) => {
@@ -36,6 +46,15 @@ const playSong = (obj, event) => {
   event.target.parentElement.parentElement.firstElementChild.nextElementSibling.classList.add(
     "targetedTrack"
   );
+
+  // Targetting Music Icon to remove d-none
+  event.target.parentElement.parentElement.parentElement.firstElementChild.firstElementChild.classList.remove(
+    "d-none"
+  );
+  event.target.parentElement.parentElement.parentElement.firstElementChild.firstElementChild.classList.add(
+    "d-flex"
+  );
+
   track = JSON.parse(decodeURIComponent(obj));
   console.log(track);
   // PlayerInfos
@@ -79,9 +98,9 @@ const searchInputValue = async (event) => {
       let seconds = secondsString.slice(-2);
 
       albumTable.innerHTML += `<tr>
-                                <th class="thMinWidth pt-4" scope="row">${[
+                                <th class="thMinWidth text-center" scope="row">${[
                                   i + 1,
-                                ]}</th>
+                                ]} <i class="bi bi-bar-chart-fill d-none"></i></th>
                                     <td class="d-flex flex-column">
                                       <div class="tableTitle">
                                         <a onclick="playSong('${encodeURIComponent(
