@@ -239,6 +239,10 @@ body {
 
 /* Table */
 
+.targetedTrack {
+  color: green !important;
+}
+
 tbody tr:hover {
   background-color: #191919;
 }
