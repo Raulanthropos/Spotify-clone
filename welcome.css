@@ -405,8 +405,8 @@ i {
 }
 .sidecards .play .fa {
   position: absolute;
-  right: 1rem;
-  top: 5rem;
+  left: 0.1rem;
+  top: 6.5rem;
 
   padding: 1rem;
   background-color: #1db954;

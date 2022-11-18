@@ -367,7 +367,10 @@
           <div class="listIcon px-2"><i class="bi bi-list"></i></div>
           <div class="computerIcon px-2"><i class="bi bi-pc-display"></i></div>
           <div id="change-volume" class="volumeIcon px-2">
-            <i onclick="changeVolume()" class="bi bi-volume-up"></i>
+            <i
+              onclick="changeVolume(), document.getElementById('sound1').volume=0.1"
+              class="bi bi-volume-up"
+            ></i>
           </div>
           <div class="progress" style="height: 2px">
             <div

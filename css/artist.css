@@ -318,10 +318,8 @@ figcaption {
   color: green !important;
 }
 
-/* .col-md-1,
-.rank,
-.track-title,
-.duration,
-.current-track-title {
-  margin-block: auto;
-} */
+
+i {
+  cursor: pointer;
+}
+

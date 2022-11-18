@@ -61,7 +61,7 @@ let secondRow = document.querySelector("#secondAlbumRow");
 // Card row with albums to redirect to album page.
 const fillPageAlbums = function (listOfSearch) {
   cardstart.innerHTML = `<h1 class="col-12 mb-4">Good Morning</h1>`;
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 12; i++) {
     console.log(listOfSearch.data[i].album.id);
     cardstart.innerHTML += `<div class="col-6 col-md-6 col-lg-6 col-xl-2">
                               <a href="album.html?albumId=${listOfSearch.data[i].album.id}">
@@ -165,9 +165,9 @@ let volume = document.querySelector("#change-volume");
 
 const changeVolume = () => {
   volume.innerHTML = "";
-  volume.innerHTML += `<i onclick="changeVolume2()" class="bi bi-volume-mute"></i>`;
+  volume.innerHTML += `<i onclick="changeVolume2(), document.getElementById('sound1').volume=1.0" class="bi bi-volume-mute"></i>`;
 };
 const changeVolume2 = () => {
   volume.innerHTML = "";
-  volume.innerHTML += `<i onclick="changeVolume()" class="bi bi-volume-up"></i>`;
+  volume.innerHTML += `<i onclick="changeVolume() document.getElementById('sound1').volume=0.1" class="bi bi-volume-up"></i>`;
 };
