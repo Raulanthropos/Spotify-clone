@@ -321,3 +321,6 @@ figcaption {
 .current-track-title {
   /* margin-block: auto; */
 }
+i {
+  cursor: pointer;
+}
