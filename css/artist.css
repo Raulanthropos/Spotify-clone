@@ -130,7 +130,7 @@ h2 {
   border: none;
   cursor: pointer;
   background-color: transparent;
-  margin-bottom: 5vh;
+  margin-bottom: 4vh;
 }
 
 .band-pic {
@@ -310,17 +310,16 @@ figcaption {
 }
 
 .play-song {
-  max-height: 6.5vh;
+  max-height: 10.5vh;
   padding-top: 0;
 }
 
-.col-md-1,
-.rank,
-.track-title,
-.duration,
-.current-track-title {
-  /* margin-block: auto; */
+.targetedTrack {
+  color: green !important;
 }
+
+
 i {
   cursor: pointer;
 }
+
