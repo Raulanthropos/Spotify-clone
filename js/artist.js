@@ -163,5 +163,5 @@ const changeVolume = () => {
 };
 const changeVolume2 = () => {
   volume.innerHTML = "";
-  volume.innerHTML += `<i onclick="changeVolume(), document.getElementById('sound1').volume=0.1" class="bi bi-volume-up"></i>`;
+  volume.innerHTML += `<i onclick="changeVolume(), document.getElementById('sound1').volume=0" class="bi bi-volume-up"></i>`;
 };
