@@ -15,45 +15,17 @@ const validateInputs = (e) => {
     const passwordValue = password.value.trim();
 
     if (usernameValue === '' || passwordValue === '') {
+        e.preventDefault();
         alert("It seems that you did not fill the fields correctly. Please try again.");
-        form.innerHTML =`<form action="login.html" method="get">
-        <div class="login">
-        <input type="text" autocomplete="username" placeholder="Email address or username" id="username">
-        <input type="password" minlength="1" autocomplete="current-password" placeholder="Password" id="password">
-    </div>
-    <div class="getIn">
-        <div class="remember-user">
-            <input id='checkbox' type="checkbox">
-            <label for="checkbox">Remember me</label>
-
-        </div>
-        <button class="btn btn-success mt-1" type="submit" id="log-in">
-            <a href="">LOG IN</a>
-        </button>
-    </div>`
     } else if (usernameValue === user1 && passwordValue === pass1) {
-        alert(`Welcome home, ${user1}! We're redirecting you to the home page...`)
+        alert("Welcome back!");
     } else if (usernameValue === user2 && passwordValue === pass2) {
-        alert(`Welcome home, ${user2}! We're redirecting you to the home page...`)
+        alert("Welcome back!");
     } else if (usernameValue === user3 && passwordValue === pass3) {
-        alert(`Welcome home, ${user3}! We're redirecting you to the home page...`)
+        alert("Welcome back!");
     } else {
+        e.preventDefault();
         alert("Either your username or your password, is wrong. Please try again.")
-        form.innerHTML =`<form action="login.html" method="get">
-        <div class="login">
-        <input type="text" autocomplete="username" placeholder="Email address or username" id="username">
-        <input type="password" minlength="1" autocomplete="current-password" placeholder="Password" id="password">
-    </div>
-    <div class="getIn">
-        <div class="remember-user">
-            <input id='checkbox' type="checkbox">
-            <label for="checkbox">Remember me</label>
-
-        </div>
-        <button class="btn btn-success mt-1" type="submit" id="log-in">
-            <a href="">LOG IN</a>
-        </button>
-    </div>`
     }
 
     // switch(usernameValue) {
